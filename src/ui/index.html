@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="../favicon.png">
+    <title>BA Memory UI</title>
+</head>
+<body>
+    <div class="app">
+        <div class="main">
+            <div class="player" id="client">
+
+            </div>
+        </div>
+        <button class="expand" onclick="document.getElementById('sidebar').style.left='0'">
+            <svg class="icon" style="color: white; width: 1em;height: 1em;vertical-align: middle;fill: rgb(255 255 255);overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="11800"><path d="M296.96 0l-81.92 81.92L645.12 512 215.04 942.08l81.92 81.92 512-512z" p-id="11801"></path></svg>
+        </button>
+        <div class="sidebar" id="sidebar">
+            <div class="header">
+                <button class="collapse" onclick="document.getElementById('sidebar').style.left='-100%'">
+                    <svg class="icon" style="color:white; width: 3em;height: 1.5em;vertical-align: middle;background: inherit; fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3273"><path d="M561.17013333 509.06026667L858.02666667 213.73973333c14.03733333-13.968 14.1088-36.60053333 0.1408-50.63786666-13.99893333-14.06826667-36.592-14.10773333-50.62933334-0.1408L510.6048 458.31466667 216.256 163.06986667c-13.9328-13.96693333-36.59733333-14.03733333-50.63466667-0.07146667-14.00426667 13.96586667-14.03733333 36.63146667-0.0704 50.6688l294.27733334 295.1744-296.71466667 295.14026667c-14.0384 13.968-14.1088 36.59733333-0.14293333 50.63786666a35.7216 35.7216 0 0 0 25.3856 10.56c9.13066667 0 18.26666667-3.4688 25.25013333-10.4192l296.78613333-295.2128L807.4304 857.48266667c6.9824 7.02186667 16.15253333 10.53013333 25.35253333 10.53013333a35.72906667 35.72906667 0 0 0 25.28213334-10.45973333c13.99893333-13.96586667 14.03733333-36.592 0.07146666-50.62933334L561.17013333 509.06026667z m0 0" p-id="3274"></path></svg>
+                </button>
+            </div>
+            <div class="content" id="parent">
+                <p class="center medium"><span style="margin: auto"><span data-huge>Settings</span><span data-big> / 设置</span></span></p>
+                <p class="left"><span data-medium>Lobby Model</span><span data-small> / 回忆大厅模型</span></p>
+                <select name="model-selector" id="model-selector" class="basic-selector">
+                    <option value="none">None / 未选择</option>
+                </select>
+                <p class="left medium"><span data-medium>Animation</span><span data-small> / 动画</span></p>
+                <select name="animation" id="animation" class="basic-selector">
+                    <option value="start_idle_01">start_idle_01</option>
+                </select>
+                <p class="left medium"><span data-medium>Appendixes</span><span data-small> / 附加项</span></p>
+                <div class="check">
+                    <input type="checkbox" value="repeat" name="appendixes" id="repeat" checked/>
+                    <span data-small>&emsp;Loop Playing / 循环播放</span>
+                </div>
+                <div class="check">
+                    <input type="checkbox" value="appreciation" name="appendixes" id="appreciation" checked />
+                    <span data-small>&emsp;Hide Bottom Watermark / 隐藏底端水印</span>
+                </div>
+                <div class="check">
+                    <input type="checkbox" value="export" name="appendixes" id="export" />
+                    <span data-small>&emsp;Export as Video / 导出为视频</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="./init.js"></script>
+</body>
+</html>

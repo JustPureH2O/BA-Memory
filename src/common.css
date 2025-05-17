@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgb(48, 48, 48);
+}
+
+footer {
+    color: #FFFFFF;
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}

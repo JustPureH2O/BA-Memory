@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgb(48, 48, 48);
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30em;
+    height: 100%;
+    background: rgb(88, 88, 88);
+    transition: left ease .2s;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2em;
+    margin-top: 1em;
+    background: inherit;
+}
+
+.expand {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 1em;
+    width: 4em;
+    height: 4em;
+    top: 1em;
+    left: 1em;
+    background: rgb(70, 70, 70);
+}
+
+.collapse {
+    cursor: pointer;
+    border-radius: 1em;
+    width: 3em;
+    height: 3em;
+    margin-left: auto;
+    background: rgb(70, 70, 70);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background: inherit;
+}
+
+.basic-selector {
+    background: rgb(255, 255, 255);
+    width: 70%;
+    height: 2em;
+    margin: 1em auto auto auto;
+}
+
+.player {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.check {
+    display: flex;
+    flex-direction: row;
+    background: inherit;
+    margin: .5em 0 0 1.5em;
+}
+
+span {
+    background: inherit;
+    color: rgb(255, 255, 255);
+}
+
+span[data-huge] {
+    font-size: 2.5em;
+}
+
+span[data-big] {
+    font-size: 1.5em;
+}
+
+span[data-medium] {
+    font-size: 1.25em;
+}
+
+span[data-small] {
+    font-size: .9em;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    background: inherit;
+}
+
+p.left {
+    margin-left: 1em;
+}
+
+p.center {
+    margin: auto;
+}
+
+p.big {
+    margin-top: 2em;
+}
+
+p.medium {
+    margin-top: 1em;
+}
+
+select {
+    background: rgb(255, 255, 255);
+}
+
+option {
+    background: rgb(255, 255, 255);
+}
+
+input {
+    background: inherit;
+}
