@@ -170,12 +170,12 @@ const CharacterTag = {
     NERU_UNIFORM: {user: "neru_uniform", name: "CH0280", cn: "美甘尼禄（校服）"}, // IMPL Implemented on 2025/01/27
     ASUNA: {user: "asuna", name: "Asuna", cn: "一之濑明日奈"},
     ASUNA_BUNNY: {user: "asuna_bunny", name: "CH0098", cn: "一之濑明日奈（兔女郎）"},
-    ASUNA_UNIFORM: {user: "asuna_uniform", name: "CH0281", cn: "一之濑明日奈（校服）"}, // IMPL Implemented on 2025/01/
+    ASUNA_UNIFORM: {user: "asuna_uniform", name: "CH0281", cn: "一之濑明日奈（校服）"}, // IMPL Implemented on 2025/01/20
     KARIN: {user: "karin", name: "Karin", cn: "角楯花凛"},
-    KARIN_BUNNY: {user: "karin_bunny", name: "角楯花凛（兔女郎）"},
-    KARIN_UNIFORM: {user: "karin_uniform", name: "角楯花凛（校服）"},
+    KARIN_BUNNY: {user: "karin_bunny", name: "CH0100", cn: "角楯花凛（兔女郎）"},
+    KARIN_UNIFORM: {user: "karin_uniform", name: "CH0282", cn: "角楯花凛（校服）"}, // IMPL Implemented on 2025/01/20
     AKANE: {user: "akane", name: "Akane", cn: "室笠茜"},
-    AKANE_BUNNY: {user: "akane_bunny", name: "室笠茜（兔女郎）"},
+    AKANE_BUNNY: {user: "akane_bunny", name: "CH0099", cn: "室笠茜（兔女郎）"},
     TOKI: {user: "toki", name: "CH0187", cn: "飞鸟马时"},
     TOKI_BUNNY: {user: "toki_bunny", name: "CH0211", cn: "飞鸟马时（兔女郎）"},
     // Paranormal Affairs Department 灵异现象搜查部
@@ -207,10 +207,12 @@ const CharacterTag = {
     KAHO: {user: "kaho", name: "CH0107", cn: "桑上果穗"},
     CHISE: {user: "chise", name: "Chise", cn: "和乐千世"},
     CHISE_SWIMSUIT: {user: "chise_swimsuit", name: "CH0178", cn: "和乐千世（泳装）"},
+    NIYA: {user: "niya", name: "CH0109", cn: "天地尼娅"}, // IMPL Implemented on 2025/05/21
     // Hyakkaryouran Conflict Resolution Council 百花缭乱调停委员会
     RENGE: {user: "renge", name: "CH0224", cn: "不破莲华"},
     KIKYOU: {user: "kikyou", name: "CH0225", cn: "桐生桔梗"},
     YUKARI: {user: "yukari", name: "CH0161", cn: "勘解由小路紫"},
+    NAGUSA: {user: "nagusa", name: "CH0222", cn: "御稜名草"}, // IMPL Implemented on 2025/05/21
     // Festival Management Committee 节庆营运管理部
     SHIZUKO: {user: "shizuko", name: "Shizuko", cn: "河和静子"},
     SHIZUKO_SWIMSUIT: {user: "shizuko_swimsuit", name: "CH0180", cn: "河和静子（泳装）"},

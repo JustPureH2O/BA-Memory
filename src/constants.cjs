@@ -168,7 +168,7 @@ const CharacterTag = {
     ASUNA_UNIFORM: {user: "asuna_uniform", name: "CH0281", V4: true}, // IMPL Implemented on 2025/01/20
     KARIN: {user: "karin", name: "Karin"},
     KARIN_BUNNY: {user: "karin_bunny", name: "CH0100"},
-    KARIN_UNIFORM: {user: "karin_uniform", name: "CH0100"}, // IMPL Implemented on 2025/01/20
+    KARIN_UNIFORM: {user: "karin_uniform", name: "CH0282", V4: true}, // IMPL Implemented on 2025/01/20
     AKANE: {user: "akane", name: "Akane"},
     AKANE_BUNNY: {user: "akane_bunny", name: "CH0099"},
     TOKI: {user: "toki", name: "CH0187"},
@@ -202,10 +202,12 @@ const CharacterTag = {
     KAHO: {user: "kaho", name: "CH0107"},
     CHISE: {user: "chise", name: "Chise"},
     CHISE_SWIMSUIT: {user: "chise_swimsuit", name: "CH0178"},
+    NIYA: {user: "niya", name: "CH0109", V4: true}, // IMPL Implemented on 2025/05/21
     // Hyakkaryouran Conflict Resolution Council 百花缭乱调停委员会
     RENGE: {user: "renge", name: "CH0224"},
     KIKYOU: {user: "kikyou", name: "CH0225"},
     YUKARI: {user: "yukari", name: "CH0161"},
+    NAGUSA: {user: "nagusa", name: "CH0222", V4: true}, // IMPL Implemented on 2025/05/21
     // Festival Management Committee 节庆营运管理部
     SHIZUKO: {user: "shizuko", name: "Shizuko"},
     SHIZUKO_SWIMSUIT: {user: "shizuko_swimsuit", name: "CH0180"},
