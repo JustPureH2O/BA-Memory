@@ -329,7 +329,6 @@ const CharacterTag = {
 };
 
 function changeHandler(a, isAnimation = false) {
-    console.log(isAnimation);
     let selector = document.getElementById('model-selector');
     let animation = document.getElementById('animation');
     let client = document.getElementById('client');
@@ -371,6 +370,18 @@ function changeHandler(a, isAnimation = false) {
 }
 
 (function () {
+    let ascii_art = 'Powered by \n' +
+        ' ____     ______                                                                 \n' +
+        '/\\  _`\\  /\\  _  \\      /\'\\_/`\\                                                   \n' +
+        '\\ \\ \\L\\ \\\\ \\ \\L\\ \\    /\\      \\      __     ___ ___      ___    _ __   __  __    \n' +
+        ' \\ \\  _ <\'\\ \\  __ \\   \\ \\ \\__\\ \\   /\'__`\\ /\' __` __`\\   / __`\\ /\\`\'__\\/\\ \\/\\ \\   \n' +
+        '  \\ \\ \\L\\ \\\\ \\ \\/\\ \\   \\ \\ \\_/\\ \\ /\\  __/ /\\ \\/\\ \\/\\ \\ /\\ \\L\\ \\\\ \\ \\/ \\ \\ \\_\\ \\  \n' +
+        '   \\ \\____/ \\ \\_\\ \\_\\   \\ \\_\\\\ \\_\\\\ \\____\\\\ \\_\\ \\_\\ \\_\\\\ \\____/ \\ \\_\\  \\/`____ \\ \n' +
+        '    \\/___/   \\/_/\\/_/    \\/_/ \\/_/ \\/____/ \\/_/\\/_/\\/_/ \\/___/   \\/_/   `/___/> \\\n' +
+        '                                                                           /\\___/\n' +
+        '                                                                           \\/__/ \n' +
+        'by JustPureH2O. COMMERCIAL DERIVATION IS PROHIBITED!\nThe player is open-source at https://github.com/JustPureH2O/BA-Memory';
+    console.log(ascii_art);
     let selector = document.getElementById('model-selector');
     let parent = document.getElementById('parent');
     let checkbox = document.getElementsByName('appendixes');

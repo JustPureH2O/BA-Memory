@@ -75,6 +75,13 @@
     margin: .5em 0 0 1.5em;
 }
 
+.comments {
+    display: flex;
+    flex-direction: column;
+    background: inherit;
+    margin: .5em 0 0 1.5em;
+}
+
 span {
     background: inherit;
     color: rgb(255, 255, 255);
@@ -94,6 +101,11 @@ span[data-medium] {
 
 span[data-small] {
     font-size: .9em;
+}
+
+span[data-tiny] {
+    font-size: .75em;
+    color: #E6E6E6;
 }
 
 p {
