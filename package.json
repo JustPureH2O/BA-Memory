@@ -1,0 +1,27 @@
+{
+  "name": "ba-memory",
+  "version": "1.0.0",
+  "dependencies": {
+    "@esotericsoftware/spine-pixi": "~4.2.61",
+    "@pixi/text": "^7.4.2",
+    "pixi.js": "~7.4.2",
+    "pixi-spine": "~4.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustPureH2O/JustAPI.git"
+  },
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/JustPureH2O/BA-Memory/issues"
+  },
+  "homepage": "https://github.com/JustPureH2O/BA-Memory#readme",
+  "main": "index.js",
+  "scripts": {
+    "generateBAMbundle": "esbuild src/main.cjs --bundle --minify --outfile=src/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

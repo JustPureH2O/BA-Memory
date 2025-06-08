@@ -122,6 +122,7 @@ const CharacterTag = {
     KAZUSA: {user: "kazusa", name: "kazusa"},
     KAZUSA_BAND: {user: "kazusa_band", name: "CH0250"},
     NATSU: {user: "natsu", name: "CH0155"},
+    NATSU_BAND: {user: "natsu_band", name: "CH0221", V4: true}, // IMPL Implemented on 2025/06/04
     AIRI: {user: "airi", name: "Airi"},
     AIRI_BAND: {user: "airi_band", name: "CH0251"},
     YOSHIMI: {user: "yoshimi", name: "Yoshimi"},

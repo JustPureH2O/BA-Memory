@@ -130,6 +130,7 @@ const CharacterTag = {
     KAZUSA: {user: "kazusa", name: "kazusa", cn: "杏山和纱"},
     KAZUSA_BAND: {user: "kazusa_band", name: "CH0250", cn: "杏山和纱（乐队）"},
     NATSU: {user: "natsu", name: "CH0155", cn: "柚鸟夏"},
+    NATSU_BAND: {user: "natsu_band", name: "CH0221", cn: "柚鸟夏（乐队）"}, // IMPL Implemented on 2025/06/04
     AIRI: {user: "airi", name: "Airi", cn: "栗村爱莉"},
     AIRI_BAND: {user: "airi_band", name: "CH0251", cn: "栗村爱莉（乐队）"},
     YOSHIMI: {user: "yoshimi", name: "Yoshimi", cn: "伊原木好美"},
