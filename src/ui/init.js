@@ -211,8 +211,11 @@ const CharacterTag = {
     NIYA: {user: "niya", name: "CH0109", cn: "天地尼娅"}, // IMPL Implemented on 2025/05/21
     // Hyakkaryouran Conflict Resolution Council 百花缭乱调停委员会
     RENGE: {user: "renge", name: "CH0224", cn: "不破莲华"},
+    RENGE_SWIMSUIT: {user: "renge_swimsuit", name: "CH0302", cn: "不破莲华（泳装）"}, // IMPL Implemented on 2025/06/25
     KIKYOU: {user: "kikyou", name: "CH0225", cn: "桐生桔梗"},
+    KIKYOU_SWIMSUIT: {user: "kikyou", name: "CH0300", cn: "桐生桔梗（泳装）"}, // IMPL Implemented on 2025/06/25
     YUKARI: {user: "yukari", name: "CH0161", cn: "勘解由小路紫"},
+    YUKARI_SWIMSUIT: {user: "yukari_swimsuit", name: "CH0301", cn: "勘解由小路紫（泳装）"}, // IMPL Implemented on 2025/06/25
     NAGUSA: {user: "nagusa", name: "CH0222", cn: "御稜名草"}, // IMPL Implemented on 2025/05/21
     // Festival Management Committee 节庆营运管理部
     SHIZUKO: {user: "shizuko", name: "Shizuko", cn: "河和静子"},
