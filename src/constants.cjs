@@ -90,6 +90,7 @@ const CharacterTag = {
     MIKA: {user: "mika", name: "CH0069"},
     NAGISA: {user: "nagisa", name: "Nagisa"},
     SEIA: {user: "seia", name: "CH0070", V4: true}, // IMPL implemented on 2025/01/20
+    SEIA_SWIMSUIT: {user: "seia_swimsuit", name: "CH0295", V4: true}, // IMPL Implemented on 2025/07/22
     // Sisterhood 姐妹会
     SAKURAKO: {user: "sakurako", name: "Sakurako"},
     SAKURAKO_IDOL: {user: "sakurako_idol", name: "CH0274", V4: true}, // IMPL implemented on 2024/10/23
@@ -104,6 +105,7 @@ const CharacterTag = {
     TSURUGI_SWIMSUIT: {user: "tsurugi_swimsuit", name: "CH0060", V4: true},
     HASUMI: {user: "hasumi", name: "Hasumi"},
     HASUMI_GYM: {user: "hasumi_gym", name: "CH0190"},
+    HASUMI_SWIMSUIT: {user: "hasumi_swimsuit", name: "CH0291", V4: true}, // IMPL Implemented on 2025/07/22
     MASHIRO: {user: "mashiro", name: "Mashiro"},
     MASHIRO_SWIMSUIT: {user: "mashiro_swimsuit", name: "Mashiro_swimsuit"},
     ICHIKA: {user: "ichika", name: "CH0071"},

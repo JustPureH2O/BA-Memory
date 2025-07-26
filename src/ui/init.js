@@ -98,6 +98,7 @@ const CharacterTag = {
     MIKA: {user: "mika", name: "CH0069", cn: "圣园未花"},
     NAGISA: {user: "nagisa", name: "Nagisa", cn: "桐藤渚"},
     SEIA: {user: "seia", name: "CH0070", V4: true, cn: "百合园圣娅"}, // IMPL implemented on 2025/01/20
+    SEIA_SWIMSUIT: {user: "seia_swimsuit", name: "CH0295", V4: true, cn: "百合园圣娅（泳装）"}, // IMPL Implemented on 2025/07/22
     // Sisterhood 姐妹会
     SAKURAKO: {user: "sakurako", name: "Sakurako", cn: "歌住樱子"},
     SAKURAKO_IDOL: {user: "sakurako_idol", name: "CH0274", V4: true, cn: "歌住樱子（偶像）"}, // IMPL implemented on 2024/10/23
@@ -112,6 +113,7 @@ const CharacterTag = {
     TSURUGI_SWIMSUIT: {user: "tsurugi_swimsuit", name: "CH0060", cn: "剑先鹤城（泳装）"},
     HASUMI: {user: "hasumi", name: "Hasumi", cn: "羽川莲见"},
     HASUMI_GYM: {user: "hasumi_gym", name: "CH0190", cn: "羽川莲见（体操服）"},
+    HASUMI_SWIMSUIT: {user: "hasumi_swimsuit", name: "CH0291", V4: true, cn: "羽川莲见（泳装）"}, // IMPL Implemented on 2025/07/22
     MASHIRO: {user: "mashiro", name: "Mashiro", cn: "静山真白"},
     MASHIRO_SWIMSUIT: {user: "mashiro_swimsuit", name: "Mashiro_swimsuit", cn: "静山真白"},
     ICHIKA: {user: "ichika", name: "CH0071", cn: "仲正一花"},
