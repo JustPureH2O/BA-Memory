@@ -56,14 +56,13 @@ class Player {
 
     moveConfigs(options) {
         this.options = {
-            width: 3092,
+            width: 4096,
             mute: false,
             debug: false,
             noRepeat: false,
             animation: 'start_idle_01',
-            ratio: 1080 / 1920,
+            ratio: 0.5625,
             fixed: false,
-            resolution: 3092,
             export: false
         }
         if (options.get('export') !== null) this.options['export'] = true;
@@ -77,8 +76,8 @@ class Player {
 
     getCanvasArguments() {
         let ret = {scale: 1, scaleX: 1, scaleY: 1, x: 0, y: 0};
-        ret['scaleX'] = this.app.renderer.width / 3092 * Math.sqrt(window.devicePixelRatio);
-        ret['scaleY'] = this.app.renderer.height / 1932.5 * Math.sqrt(window.devicePixelRatio);
+        ret['scaleX'] = this.app.renderer.width / 3000;
+        ret['scaleY'] = this.app.renderer.height / (3000 * screen.height / screen.width);
         ret['scale'] = Math.max(ret['scaleX'], ret['scaleY']);
         ret['x'] = this.app.renderer.width / 2;
         ret['y'] = this.app.renderer.height;
@@ -86,11 +85,11 @@ class Player {
     }
 
     resize() {
-        if (window.innerWidth < this.options['width']) {
-            this.app.renderer.resize(window.innerWidth, window.innerWidth * this.options['ratio']);
-        } else {
-            this.app.renderer.resize(this.options['width'], this.options['width'] * this.options['ratio']);
-        }
+        if (window.innerWidth * this.options['ratio'] > window.innerHeight)
+            this.app.renderer.resize(Math.min(this.options['width'], window.innerHeight / this.options['ratio']), window.innerHeight);
+        if (window.innerHeight / this.options['ratio'] > window.innerWidth)
+            this.app.renderer.resize(Math.min(this.options['width'], window.innerWidth), window.innerWidth * this.options['ratio']);
+
         let args = this.getCanvasArguments();
         this.model.scale.set(args['scale']);
         this.model.x = args['x'];

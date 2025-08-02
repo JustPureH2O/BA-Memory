@@ -88,7 +88,9 @@ const CharacterTag = {
     // --------------- Trinity ----------------- 圣三一
     // Tea Party 茶话会
     MIKA: {user: "mika", name: "CH0069"},
+    MIKA_SWIMSUIT: {user: "mika_swimsuit", name: "CH0294", V4: true}, // IMPL Implemented on 2025/07/30
     NAGISA: {user: "nagisa", name: "Nagisa"},
+    NAGISA_SWIMSUIT: {user: "nagisa_swimsuit", name: "CH0293", V4: true}, // IMPL Implemented on 2025/07/30
     SEIA: {user: "seia", name: "CH0070", V4: true}, // IMPL implemented on 2025/01/20
     SEIA_SWIMSUIT: {user: "seia_swimsuit", name: "CH0295", V4: true}, // IMPL Implemented on 2025/07/22
     // Sisterhood 姐妹会
@@ -109,6 +111,7 @@ const CharacterTag = {
     MASHIRO: {user: "mashiro", name: "Mashiro"},
     MASHIRO_SWIMSUIT: {user: "mashiro_swimsuit", name: "Mashiro_swimsuit"},
     ICHIKA: {user: "ichika", name: "CH0071"},
+    ICHIKA_SWIMSUIT: {user: "ichika_swimsuit", name: "CH0292", V4: true}, // IMPL Implemented on 2025/07/22
     // Knights Hospitaller 救援骑士团
     MINE: {user: "mine", name: "CH0152"},
     MINE_IDOL: {user: "mine_idol", name: "CH0275", V4: true}, // IMPL implemented on 2024/10/23
