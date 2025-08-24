@@ -9,7 +9,6 @@ const CharacterTag = {
     SHIROKO_SWIMSUIT: {user: "shiroko_swimsuit", name: "CH0188"},
     SHIROKO_RIDINGSUIT: {user: "shiroko_ridingsuit", name: "Shiroko_ridingsuit"},
     SHIROKO_TERROR: {user: "shiroko_terror", name: "CH0263"},
-    SHIROKO_TERROR_LIGHT_WEAKENED: {user: "shiroko_terror_home_fix", name: "CH0263_home_fix"},
     SHIROKO_BD: {user: "shiroko_bd", name: "LobbyShiroko_multi", strict: true, V4: true},
     HOSHINO: {user: "hoshino", name: "Hoshino"},
     HOSHINO_SWIMSUIT: {user: "hoshino_swimsuit", name: "Hoshino_swimsuit"},
@@ -33,9 +32,6 @@ const CharacterTag = {
     KAYOKO: {user: "kayoko", name: "Kayoko"},
     KAYOKO_NEWYEAR: {user: "kayoko_newyear", name: "CH0086"},
     KAYOKO_DRESS: {user: "kayoko_dress", name: "CH0239"},
-    KAYOKO_DRESS_EXPOSURE_FIX: {user: "kayoko_dress_home_fix", name: "CH0239_home_fix"},
-    KAYOKO_DRESS_LIGHT_WEAKENED: {user: "kayoko_dress_home_dark", name: "CH0239_home_dark"},
-    KAYOKO_DRESS_LIGHT_REMOVED: {user: "kayoko_dress_home_deep", name: "CH0239_home_deep"},
     MUTSUKI: {user: "mutsuki", name: "Mutsuki"},
     MUTSUKI_NEWYEAR: {user: "mutsuki_newyear", name: "mutsuki_newyear"},
     HARUKA: {user: "haruka", name: "Haruka"},
@@ -283,18 +279,15 @@ const CharacterTag = {
     KIRINO_SWIMSUIT: {user: "kirino_swimsuit", name: "CH0262"},
     FUBUKI: {user: "fubuki", name: "CH0141"},
     FUBUKI_SWIMSUIT: {user: "fubuki_swimsuit", name: "CH0261"},
-    FUBUKI_SWIMSUIT_LIGHT_WEAKENED: {user: "fubuki_swimsuit_home_fix", name: "CH0261_home_fix2"},
     // ---------------------- Arius ----------------------- 阿里乌斯
     // 白洲梓划在圣三一下
     ATSUKO: {user: "atsuko", name: "Atsuko"},
     ATSUKO_SWIMSUIT: {user: "atsuko_swimsuit", name: "CH0267"},
-    ATSUKO_SWIMSUIT_LIGHT_WEAKENED: {user: "atsuko_swimsuit_home_fix", name: "CH0267_home_fix"},
     SAORI: {user: "saori", name: "Saori"},
     SAORI_SWIMSUIT: {user: "saori_swimsuit", name: "CH0266"},
     SAORI_DRESS: {user: "saori_dress", name: "CH0259", V4: true}, // IMPL Implemented on 2025/04/09
     HIYORI: {user: "hiyori", name: "Hiyori"},
     HIYORI_SWIMSUIT: {user: "hiyori_swimsuit", name: "CH0269"},
-    HIYORI_SWIMSUIT_LIGHT_WEAKENED: {user: "hiyori_swimsuit_home_fix", name: "CH0269_home_fix"},
     MISAKI: {user: "misaki", name: "Misaki"},
     // ----------------------- SRT -------------------------
     // RABBIT Platoon RABBIT小队
@@ -312,6 +305,10 @@ const CharacterTag = {
     NOZOMI: {user: "nozomi", name: "CH0243", V4: true}, // IMPL implemented on 2025/04/22
     // 货物输送管理部
     AOBA: {user: "aoba", name: "CH0288", V4: true}, // IMPL implemented on 2025/04/22
+    // ------------- Wild Hunt Academy of Arts -------------- 狂猎艺术学会
+    // Occult Research Society 神秘学研究会
+    ERI: {user: "eri", name: "CH0304", V4: true}, // IMPL Implemented on 2025/08/22
+    KANOE: {user: "kanoe", name: "CH0306", V4: true}, // IMPL Implemented on 2025/08/22
     // ------------ Somewhere Outside Kivotos ------------ 联动角色
     // VOCALOID V家
     MIKU: {user: "miku", name: "CH9999"},
@@ -323,10 +320,6 @@ const CharacterTag = {
 
 function queryByName(name) {
     if (name === null) return;
-    if ((name.includes('reijo') || name.includes('reizyo')) && name.includes('fix')) {
-        console.log(`Found: reizyo_home_fix from Key: ${name}`);
-        return [`./assets/reizyo_home_fix/reizyo_home.skel`, false];
-    }
     for (let i in CharacterTag) {
         if (CharacterTag[i]['user'].toLowerCase() === name.toLowerCase() || CharacterTag[i]['name'].toLowerCase() === name.toLowerCase()) {
             let res = CharacterTag[i]['name'];

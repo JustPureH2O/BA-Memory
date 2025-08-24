@@ -49,7 +49,6 @@ class Player {
         this.app = new PIXI.Application({
             width: width,
             height: height,
-            autoDensity: true
         });
         document.body.appendChild(this.app.view);
     }
@@ -63,7 +62,8 @@ class Player {
             animation: 'start_idle_01',
             ratio: 0.5625,
             fixed: false,
-            export: false
+            export: false,
+            lightFix: true,
         }
         if (options.get('export') !== null) this.options['export'] = true;
         if (options.get('fixed') !== null) this.options['fixed'] = true;
@@ -72,6 +72,7 @@ class Player {
         if (options.get('mute') !== null) this.options['mute'] = options.get('mute');
         if (options.get('noRepeat') !== null) this.options['noRepeat'] = options.get('noRepeat');
         if (options.get('animation') !== null) this.options['animation'] = options.get('animation');
+        if (options.get('lightFix') !== null) this.options['lightFix'] = options.get('lightFix');
     }
 
     getCanvasArguments() {
@@ -118,6 +119,13 @@ class Player {
         return data;
     }
 
+    fixLightExposure() {
+        if (!this.options['lightFix']) return;
+        for (let slot of this.model.skeleton.slots) {
+            if (slot.data.blendMode === 1) slot.data.blendMode = 3;
+        }
+    }
+
     async play() {
         this.cleanup();
         console.warn(`pixi-spine support for models created by Spine v4.2 or upper has yet unimplemented. spine-runtime from EsotericSoftware is used here!`);
@@ -125,6 +133,8 @@ class Player {
         PIXI.Assets.add({alias: 'atlas', src: this.src.replace('.skel', '.atlas')});
         await PIXI.Assets.load(['skel', 'atlas']);
         this.model = SpineV4.from("skel", "atlas");
+        this.fixLightExposure()
+
         console.log(`Version: ${this.model.state.data.skeletonData.version}\nWidth: ${this.model.width}\nHeight: ${this.model.height}\nWH Ratio: ${this.model.width / this.model.height}`);
         this.setup();
         const animation = this.model.state.data.skeletonData.animations;
@@ -161,6 +171,7 @@ class Player {
         addEventListener("resize", debouncer);
 
         this.isPlaying = true;
+
         return this.wrapJSON();
     }
 
@@ -175,3 +186,6 @@ class Player {
 export {
     Player
 }
+
+//generatetexture
+

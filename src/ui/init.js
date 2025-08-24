@@ -4,11 +4,6 @@ const CharacterTag = {
     SHIROKO_SWIMSUIT: {user: "shiroko_swimsuit", name: "CH0188", cn: "砂狼白子（泳装）"},
     SHIROKO_RIDINGSUIT: {user: "shiroko_ridingsuit", name: "Shiroko_ridingsuit", cn: "砂狼白子（骑行）"},
     SHIROKO_TERROR: {user: "shiroko_terror", name: "CH0263", cn: "砂狼白子（恐怖）"},
-    SHIROKO_TERROR_LIGHT_WEAKENED: {
-        user: "shiroko_terror_home_fix",
-        name: "CH0263_home_fix",
-        cn: "砂狼白子（恐怖）（光线减弱）"
-    },
     SHIROKO_BD: {user: "shiroko_bd", name: "LobbyShiroko_multi", strict: true, V4: true, cn: "砂狼白子（特典）"},
     HOSHINO: {user: "hoshino", name: "Hoshino", cn: "小鸟游星野"},
     HOSHINO_SWIMSUIT: {user: "hoshino_swimsuit", name: "Hoshino_swimsuit", cn: "小鸟游星野（泳装）"},
@@ -32,21 +27,6 @@ const CharacterTag = {
     KAYOKO: {user: "kayoko", name: "Kayoko", cn: "鬼方佳代子"},
     KAYOKO_NEWYEAR: {user: "kayoko_newyear", name: "CH0086", cn: "鬼方佳代子（正月）"},
     KAYOKO_DRESS: {user: "kayoko_dress", name: "CH0239", cn: "鬼方佳代子（礼服）"},
-    KAYOKO_DRESS_EXPOSURE_FIX: {
-        user: "kayoko_dress_home_fix",
-        name: "CH0239_home_fix",
-        cn: "鬼方佳代子（礼服）（光线修复）"
-    },
-    KAYOKO_DRESS_LIGHT_WEAKENED: {
-        user: "kayoko_dress_home_dark",
-        name: "CH0239_home_dark",
-        cn: "鬼方佳代子（礼服）（光线减弱）"
-    },
-    KAYOKO_DRESS_LIGHT_REMOVED: {
-        user: "kayoko_dress_home_deep",
-        name: "CH0239_home_deep",
-        cn: "鬼方佳代子（礼服）（无光线）"
-    },
     MUTSUKI: {user: "mutsuki", name: "Mutsuki", cn: "浅黄睦月"},
     MUTSUKI_NEWYEAR: {user: "mutsuki_newyear", name: "mutsuki_newyear", cn: "浅黄睦月（正月）"},
     HARUKA: {user: "haruka", name: "Haruka", cn: "伊草春香"},
@@ -287,30 +267,15 @@ const CharacterTag = {
     KIRINO_SWIMSUIT: {user: "kirino_swimsuit", name: "CH0262", cn: "中务桐乃（泳装）"},
     FUBUKI: {user: "fubuki", name: "CH0141", cn: "合欢垣吹雪"},
     FUBUKI_SWIMSUIT: {user: "fubuki_swimsuit", name: "CH0261", cn: "合欢垣吹雪（泳装）"},
-    FUBUKI_SWIMSUIT_LIGHT_WEAKENED: {
-        user: "fubuki_swimsuit_home_fix",
-        name: "CH0261_home_fix2",
-        cn: "合欢垣吹雪（泳装）（光线修复）"
-    },
     // ---------------------- Arius ----------------------- 阿里乌斯
     // 白洲梓划在圣三一下
     ATSUKO: {user: "atsuko", name: "Atsuko", cn: "秤亚津子"},
     ATSUKO_SWIMSUIT: {user: "atsuko_swimsuit", name: "CH0267", cn: "秤亚津子（泳装）"},
-    ATSUKO_SWIMSUIT_LIGHT_WEAKENED: {
-        user: "atsuko_swimsuit_home_fix",
-        name: "CH0267_home_fix",
-        cn: "秤亚津子（泳装）（光线修复）"
-    },
     SAORI: {user: "saori", name: "Saori", cn: "锭前纱织"},
     SAORI_SWIMSUIT: {user: "saori_swimsuit", name: "CH0266", cn: "锭前纱织（泳装）"},
     SAORI_DRESS: {user: "saori_dress", name: "CH0259", cn: "锭前纱织（礼服）"}, // IMPL Implemented on 2025/04/09
     HIYORI: {user: "hiyori", name: "Hiyori", cn: "槌永日和"},
     HIYORI_SWIMSUIT: {user: "hiyori_swimsuit", name: "CH0269", cn: "槌永日和（泳装）"},
-    HIYORI_SWIMSUIT_LIGHT_WEAKENED: {
-        user: "hiyori_swimsuit_home_fix",
-        name: "CH0269_home_fix",
-        cn: "槌永日和（泳装）（光线修复）"
-    },
     MISAKI: {user: "misaki", name: "Misaki", cn: "戒野美咲"},
     // ----------------------- SRT -------------------------
     // RABBIT Platoon RABBIT小队
@@ -328,6 +293,10 @@ const CharacterTag = {
     NOZOMI: {user: "nozomi", name: "CH0243", cn: "橘望"}, // IMPL implemented on 2025/04/22
     // 货物输送管理部
     AOBA: {user: "aoba", name: "CH0288", cn: "内海青叶"}, // IMPL implemented on 2025/04/22
+    // ------------- Wild Hunt Academy of Arts -------------- 狂猎艺术学会
+    // Occult Research Society 神秘学研究会
+    ERI: {user: "eri", name: "CH0304", V4: true, cn: "白尾艾利"}, // IMPL Implemented on 2025/08/22
+    KANOE: {user: "kanoe", name: "CH0306", V4: true, cn: "板垣庚"}, // IMPL Implemented on 2025/08/22
     // ------------ Somewhere Outside Kivotos ------------ 联动角色
     // VOCALOID V家
     MIKU: {user: "miku", name: "CH9999", cn: "[联动] 初音未来"},
@@ -344,6 +313,7 @@ function changeHandler(a, isAnimation = false) {
     let repeat = document.getElementById('repeat').checked;
     let exp = document.getElementById('export').checked;
     let appreciation = document.getElementById('appreciation').checked;
+    let exposureFix = document.getElementById('fix').checked;
     let ind = 0;
     while (client.hasChildNodes()) client.removeChild(client.firstChild);
     if (!isAnimation) {
@@ -356,7 +326,7 @@ function changeHandler(a, isAnimation = false) {
                 let frame = document.createElement('iframe');
 
                 frame.id = 'container-box';
-                frame.src = `https://api.justpureh2o.cn/v1/ba-memory/?name=${CharacterTag[ch].user}&animation=${animation.options[animation.selectedIndex].value}${repeat ? '' : '&noRepeat=true'}${exp ? '&export' : ''}${appreciation ? '&appreciation' : ''}`;
+                frame.src = `https://api.justpureh2o.cn/v1/ba-memory/?name=${CharacterTag[ch].user}&animation=${animation.options[animation.selectedIndex].value}${repeat ? '' : '&noRepeat=true'}${exp ? '&export' : ''}${appreciation ? '&appreciation' : ''}${exposureFix ? '' : '&lightFix=false'}`;
                 client.appendChild(frame);
                 if (!isAnimation) {
                     document.querySelector('#container-box').contentWindow.addEventListener('message', (e) => {

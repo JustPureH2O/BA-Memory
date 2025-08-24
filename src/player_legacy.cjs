@@ -50,7 +50,6 @@ class PlayerLegacy {
         this.app = new PIXI.Application({
             width: width,
             height: height,
-            autoDensity: true
         });
         document.body.appendChild(this.app.view);
     }
@@ -65,7 +64,8 @@ class PlayerLegacy {
             ratio: 1080 / 1920,
             fixed: false,
             resolution: 3092,
-            export: false
+            export: false,
+            lightFix: true,
         }
         if (options.get('export') !== null) this.options['export'] = true;
         if (options.get('fixed') !== null) this.options['fixed'] = true;
@@ -74,6 +74,7 @@ class PlayerLegacy {
         if (options.get('mute') !== null) this.options['mute'] = options.get('mute');
         if (options.get('noRepeat') !== null) this.options['noRepeat'] = options.get('noRepeat');
         if (options.get('animation') !== null) this.options['animation'] = options.get('animation');
+        if (options.get('lightFix') !== null) this.options['lightFix'] = options.get('lightFix');
     }
 
     getCanvasArguments() {
@@ -120,10 +121,19 @@ class PlayerLegacy {
         return data;
     }
 
+    fixLightExposure() {
+        if (!this.options['lightFix']) return;
+        for (let slot of this.model.skeleton.slots) {
+            if (slot.blendMode === 1) slot.blendMode = 3;
+        }
+    }
+
     async play() {
         this.cleanup();
         const data = await PIXI.Assets.load(this.src);
         this.model = new Spine(data.spineData);
+        this.fixLightExposure();
+
         console.log(`Version: ${this.model.state.data.skeletonData.version}\nWidth: ${this.model.spineData.width}\nHeight: ${this.model.spineData.height}\nWH Ratio: ${this.model.spineData.width / this.model.spineData.height}`);
         this.setup();
         const animation = this.model.state.data.skeletonData.animations;
