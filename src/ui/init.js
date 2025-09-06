@@ -1,5 +1,7 @@
 const CharacterTag = {
     // -------------- Abydos ---------------- 阿拜多斯
+    // Countermeasures Committee 对策委员会
+    // AFFILIATION A_COUNTERMEASURES
     SHIROKO: {user: "shiroko", name: "Shiroko", cn: "砂狼白子"},
     SHIROKO_SWIMSUIT: {user: "shiroko_swimsuit", name: "CH0188", cn: "砂狼白子（泳装）"},
     SHIROKO_RIDINGSUIT: {user: "shiroko_ridingsuit", name: "Shiroko_ridingsuit", cn: "砂狼白子（骑行）"},
@@ -21,6 +23,7 @@ const CharacterTag = {
     SERIKA_BD: {user: "serika_bd", name: "LobbySerika_multi", strict: true, V4: true, cn: "黑见芹香（特典）"},
     // -------------- Gehenna ---------------- 格赫娜
     // Handyman 68 便利店68
+    // AFFILIATION G_HANDYMAN68
     ARU: {user: "aru", name: "Aru", cn: "陆八魔爱露"},
     ARU_NEWYEAR: {user: "aru_newyear", name: "Aru_newyear", cn: "陆八魔爱露（正月）"},
     ARU_DRESS: {user: "aru_dress", name: "CH0240", cn: "陆八魔爱露（礼服）"},
@@ -32,11 +35,13 @@ const CharacterTag = {
     HARUKA: {user: "haruka", name: "Haruka", cn: "伊草春香"},
     HARUKA_NEWYEAR: {user: "haruka_newyear", name: "CH0087", cn: "伊草春香（正月）"},
     // School Lunch Club 供给部
+    // AFFILIATION G_LUNCH
     FUUKA: {user: "fuuka", name: "Fuuka", cn: "爱清枫香"},
     FUUKA_NEWYEAR: {user: "fuuka_newyear", name: "CH0177", cn: "爱清枫香（正月）"},
     JURI: {user: "juri", name: "Juri", cn: "牛牧茱莉"},
     JURI_PART_TIMER: {user: "juri_part_timer", name: "CH0286", cn: "牛牧茱莉（打工）"}, // IMPL Implemented on 2025/02/26
     // Gourmet Research Society 美食研究会
+    // AFFILIATION G_GOURMET
     JUNKO: {user: "junko", name: "Zunko", cn: "赤司淳子"},
     JUNKO_NEWYEAR: {user: "junko_newyear", name: "CH0192", cn: "赤司淳子（正月）"},
     HARUNA: {user: "haruna", name: "Haruna", cn: "黑馆晴奈"},
@@ -50,6 +55,7 @@ const CharacterTag = {
     AKARI_SCENE: {user: "akari_scene", name: "akari_scene", strict: true}, // TODO Deprecate this
     AKARI_NEWYEAR: {user: "akari_newyear", name: "CH0196", cn: "鳄渊明里（正月）"},
     // Disciplinary Committee 风纪委员会
+    // AFFILIATION G_DISCIPLINARY
     HINA: {user: "hina", name: "Hina", cn: "空崎日奈"},
     HINA_SWIMSUIT: {user: "hina_swimsuit", name: "CH0063", cn: "空崎日奈（泳装）"},
     HINA_DRESS: {user: "hina_dress", name: "CH0230", cn: "空崎日奈（礼服）"},
@@ -60,21 +66,26 @@ const CharacterTag = {
     CHINATSU: {user: "chinatsu", name: "Chinatsu", cn: "火宫千夏"},
     CHINATSU_HOTSPRING: {user: "chinatsu_hotspring", name: "CH0163", cn: "火宫千夏（温泉）"},
     // Pandemonium Society 万魔殿
+    // AFFILIATION G_PANDEMONIUM
     MAKOTO: {user: "makoto", name: "CH0079", cn: "羽沼真琴"},
     IROHA: {user: "iroha", name: "CH0156", cn: "枣伊吕波"},
     IBUKI: {user: "ibuki", name: "Ibuki", cn: "丹花伊吹"},
     CHIAKI: {user: "chiaki", name: "CH0238", V4: true, cn: "元宫千明"}, // IMPL Implemented on 2024/11/20
     SATSUKI: {user: "satsuki", name: "CH0080", V4: true, cn: "京极皋月"}, // IMPL Implemented on 2024/11/20
     // Hot Spring Development Department 温泉开发部
+    // AFFILIATION G_HOTSPRING
     KASUMI: {user: "kasumi", name: "CH0089", cn: "鬼怒川霞"},
     MEGU: {user: "megu", name: "CH0088", cn: "下仓惠"},
     // Emergency Medicine Club 救急医学部
+    // AFFILIATION G_MEDICINE
     SENA: {user: "sena", name: "CH0081", cn: "冰室濑名"},
     SENA_CASUAL: {user: "sena_casual", name: "CH0082", cn: "冰室濑名（私服）"}, // IMPL Implemented on 2025/02/26
     // Sparkle Club 亮闪闪部
+    // AFFILIATION G_SPARKLE
     KIRARA: {user: "kirara", name: "Kirara", cn: "夜樱绮良良"},
     // --------------- Trinity ----------------- 圣三一
     // Tea Party 茶话会
+    // AFFILIATION T_TEAPARTY
     MIKA: {user: "mika", name: "CH0069", cn: "圣园未花"},
     MIKA_SWIMSUIT: {user: "mika_swimsuit", name: "CH0294", V4: true, cn: "圣园未花（泳装）"}, // IMPL Implemented on 2025/07/30
     NAGISA: {user: "nagisa", name: "Nagisa", cn: "桐藤渚"},
@@ -82,6 +93,7 @@ const CharacterTag = {
     SEIA: {user: "seia", name: "CH0070", V4: true, cn: "百合园圣娅"}, // IMPL implemented on 2025/01/20
     SEIA_SWIMSUIT: {user: "seia_swimsuit", name: "CH0295", V4: true, cn: "百合园圣娅（泳装）"}, // IMPL Implemented on 2025/07/22
     // Sisterhood 姐妹会
+    // AFFILIATION T_SISTERHOOD
     SAKURAKO: {user: "sakurako", name: "Sakurako", cn: "歌住樱子"},
     SAKURAKO_IDOL: {user: "sakurako_idol", name: "CH0274", V4: true, cn: "歌住樱子（偶像）"}, // IMPL implemented on 2024/10/23
     MARI: {user: "mari", name: "mari", cn: "伊落玛丽"},
@@ -90,6 +102,7 @@ const CharacterTag = {
     HINATA: {user: "hinata", name: "Hinata", cn: "若叶日向"},
     HINATA_SWIMSUIT: {user: "hinata_swimsuit", name: "CH0210", cn: "若叶日向（泳装）"},
     // Justice Realization Committee 正义实现委员会
+    // AFFILIATION T_JUSTICE
     // 小春划在了补习部下
     TSURUGI: {user: "tsurugi", name: "Tsurugi", cn: "剑先鹤城"},
     TSURUGI_SWIMSUIT: {user: "tsurugi_swimsuit", name: "CH0060", cn: "剑先鹤城（泳装）"},
@@ -101,6 +114,7 @@ const CharacterTag = {
     ICHIKA: {user: "ichika", name: "CH0071", cn: "仲正一花"},
     ICHIKA_SWIMSUIT: {user: "ichika_swimsuit", name: "CH0292", V4: true, cn: "仲正一花（泳装）"}, // IMPL Implemented on 2025/07/22
     // Knights Hospitaller 救援骑士团
+    // AFFILIATION T_HOSPITALLER
     MINE: {user: "mine", name: "CH0152", cn: "苍森美弥"},
     MINE_IDOL: {user: "mine_idol", name: "CH0275", V4: true, cn: "苍森美弥（偶像）"}, // IMPL implemented on 2024/10/23
     HANAE: {user: "hanae", name: "Hanae", cn: "朝颜花江"},
@@ -108,10 +122,12 @@ const CharacterTag = {
     SERINA: {user: "serina", name: "serina", cn: "鹫见芹娜"},
     SERINA_CHRISTMAS: {user: "serina_christmas", name: "CH0194", cn: "鹫见芹娜（圣诞节）"},
     // Library Committee 图书委员会
+    // AFFILIATION T_LIBRARY
     UI: {user: "ui", name: "CH0169", cn: "古关忧"},
     UI_SWIMSUIT: {user: "ui_swimsuit", name: "CH0204", cn: "古关忧（泳装）"},
     SHIMIKO: {user: "shimiko", name: "Shimiko", cn: "圆堂志美子"},
     // After-School Sweets Club 放学后甜品部
+    // AFFILIATION T_AFTERSCHOOL
     KAZUSA: {user: "kazusa", name: "kazusa", cn: "杏山和纱"},
     KAZUSA_BAND: {user: "kazusa_band", name: "CH0250", cn: "杏山和纱（乐队）"},
     NATSU: {user: "natsu", name: "CH0155", cn: "柚鸟夏"},
@@ -121,9 +137,11 @@ const CharacterTag = {
     YOSHIMI: {user: "yoshimi", name: "Yoshimi", cn: "伊原木好美"},
     YOSHIMI_BAND: {user: "yoshimi_band", name: "CH0220", cn: "伊原木好美（乐队）"},
     // Trinity Vigilante Crew 圣三一自警团
+    // AFFILIATION T_VIGILANTE
     REISA: {user: "reisa", name: "CH0167", cn: "宇泽玲纱"},
     SUZUMI: {user: "suzumi", name: "Suzumi", cn: "守月铃美"},
     // Supplementary Lessons Department 补习部
+    // AFFILIATION T_SUPPLEMENTARY
     KOHARU: {user: "koharu", name: "Koharu", cn: "下江小春"},
     KOHARU_SWIMSUIT: {user: "koharu_swimsuit", name: "CH0205", cn: "下江小春（泳装）"},
     AZUSA: {user: "azusa", name: "Azusa", cn: "白洲梓"},
@@ -134,6 +152,7 @@ const CharacterTag = {
     HANAKO_SWIMSUIT: {user: "hanako_swimsuit", name: "CH0209", cn: "浦和花子（泳装）"},
     // ------------- Millennium Science School --------------- 千年科学学院
     // Seminar 研讨会
+    // AFFILIATION M_SEMINAR
     YUUKA: {user: "yuuka", name: "Yuuka", cn: "早濑优香"},
     YUUKA_GYM: {user: "yuuka_gym", name: "CH0184", cn: "早濑优香（体操服）A"},
     YUUKA_GYM_00: {user: "yuuka_gym_00", name: "CH0184_00", strict: true, cn: "早濑优香（体操服）B"},
@@ -143,6 +162,7 @@ const CharacterTag = {
     KOYUKI: {user: "koyuki", name: "CH0198", cn: "黑崎小雪"},
     RIO: {user: "rio", name: "CH0158", V4: true, cn: "调月莉音"}, // IMPL Implemented on 2025/01/27
     // Veritas 真理部
+    // AFFILIATION M_VERITAS
     CHIHIRO: {user: "chihiro", name: "CH0160", cn: "各务千寻"},
     MAKI: {user: "maki", name: "Maki", cn: "小涂真纪"},
     MAKI_CAMP: {user: "maki_camp", name: "CH0235", cn: "小涂真纪（露营）"}, // IMPL Implemented on 2025/02/12
@@ -151,6 +171,7 @@ const CharacterTag = {
     KOTAMA: {user: "kotama", name: "Kotama", cn: "音濑小玉"},
     KOTAMA_CAMP: {user: "kotama_camp", name: "CH0232", cn: "音濑小玉（露营）"},
     // Cleaning & Clearing C&C
+    // AFFILIATION M_CC
     NERU: {user: "neru", name: "Neru", cn: "美甘尼禄"},
     NERU_BUNNY: {user: "neru_bunny", name: "CH0101", cn: "美甘尼禄（兔女郎）"},
     NERU_UNIFORM: {user: "neru_uniform", name: "CH0280", cn: "美甘尼禄（校服）"}, // IMPL Implemented on 2025/01/27
@@ -165,10 +186,12 @@ const CharacterTag = {
     TOKI: {user: "toki", name: "CH0187", cn: "飞鸟马时"},
     TOKI_BUNNY: {user: "toki_bunny", name: "CH0211", cn: "飞鸟马时（兔女郎）"},
     // Paranormal Affairs Department 灵异现象搜查部
+    // AFFILIATION M_PARANORMAL
     HIMARI: {user: "himari", name: "CH0159", cn: "明星日鞠"},
     EIMI: {user: "eimi", name: "Eimi", cn: "和泉元艾米"},
     EIMI_SWIMSUIT: {user: "eimi_swimsuit", name: "CH0219", cn: "和泉元艾米"},
     // Engineering Department 工程部
+    // AFFILIATION M_ENGINEERING
     UTAHA: {user: "utaha", name: "Utaha", cn: "白石歌原"},
     UTAHA_CHEERLEADER: {user: "utaha_cheerleader", name: "CH0182", cn: "白石歌原（应援团）"},
     HIBIKI: {user: "hibiki", name: "Hibiki", cn: "猫冢响"},
@@ -176,10 +199,12 @@ const CharacterTag = {
     KOTORI: {user: "kotori", name: "Kotori", cn: "丰见小鸟"},
     KOTORI_CHEERLEADER: {user: "kotori_cheerleader", name: "CH0185", cn: "丰见小鸟（应援团）"},
     // Gym Training Department 体育锻炼部
+    // AFFILIATION M_GYM
     SUMIRE: {user: "sumire", name: "Sumire", cn: "乙花堇"},
     SUMIRE_PART_TIMER: {user: "sumire_part_timer", name: "CH0287", cn: "乙花堇（打工）"}, // IMPL Implemented on 2025/03/26
     REI: {user: "rei", name: "CH0245", cn: "野正丽"}, // IMPL Implemented on 2025/03/26
     // Game Development Department 游戏开发部
+    // AFFILIATION M_GAME
     MIDORI: {user: "midori", name: "Midori", cn: "才羽绿"},
     MIDORI_MAID: {user: "midori_maid", name: "CH0202", cn: "才羽绿（女仆）"},
     MOMOI: {user: "momoi", name: "Momoi", cn: "才羽桃"},
@@ -190,11 +215,13 @@ const CharacterTag = {
     YUZU_MAID: {user: "yuzu_maid", name: "CH0203", cn: "花冈柚子（女仆）"},
     // ------------------- Hyakkiyako -------------------- 百鬼夜行
     // Yin-Yang Club 阴阳部
+    // AFFILIATION H_YINYANG
     KAHO: {user: "kaho", name: "CH0107", cn: "桑上果穗"},
     CHISE: {user: "chise", name: "Chise", cn: "和乐千世"},
     CHISE_SWIMSUIT: {user: "chise_swimsuit", name: "CH0178", cn: "和乐千世（泳装）"},
     NIYA: {user: "niya", name: "CH0109", cn: "天地尼娅"}, // IMPL Implemented on 2025/05/21
     // Hyakkaryouran Conflict Resolution Council 百花缭乱调停委员会
+    // AFFILIATION H_CONFLICT
     RENGE: {user: "renge", name: "CH0224", cn: "不破莲华"},
     RENGE_SWIMSUIT: {user: "renge_swimsuit", name: "CH0302", cn: "不破莲华（泳装）"}, // IMPL Implemented on 2025/06/25
     KIKYOU: {user: "kikyou", name: "CH0225", cn: "桐生桔梗"},
@@ -203,43 +230,51 @@ const CharacterTag = {
     YUKARI_SWIMSUIT: {user: "yukari_swimsuit", name: "CH0301", cn: "勘解由小路紫（泳装）"}, // IMPL Implemented on 2025/06/25
     NAGUSA: {user: "nagusa", name: "CH0222", cn: "御稜名草"}, // IMPL Implemented on 2025/05/21
     // Festival Management Committee 节庆营运管理部
+    // AFFILIATION H_FESTIVAL
     SHIZUKO: {user: "shizuko", name: "Shizuko", cn: "河和静子"},
     SHIZUKO_SWIMSUIT: {user: "shizuko_swimsuit", name: "CH0180", cn: "河和静子（泳装）"},
     PINA: {user: "pina", name: "Pina", cn: "朝比奈菲娜"},
     PINA_GUIDE: {user: "pina_guide", name: "CH0257", cn: "朝比奈菲娜（导游）"}, // IMPL Implemented on 2025/05/14
     UMIKA: {user: "umika", name: "CH0110", cn: "里滨海夏"},
     // Etiquette Training Society 修行部
+    // AFFILIATION H_ETIQUETTE
     TSUBAKI: {user: "tsubaki", name: "Tsubaki", cn: "春日椿"},
     TSUBAKI_GUIDE: {user: "tsubaki_guide", name: "CH0255", cn: "春日椿（导游）"},
     MIMORI: {user: "mimori", name: "Mimori", cn: "水羽弥守"},
     MIMORI_SWIMSUIT: {user: "mimori_swimsuit", name: "CH0183", cn: "水羽弥守（泳装）"},
     KAEDE: {user: "kaede", name: "Kaede", cn: "勇美枫"},
     // Ninjutsu Research Department 忍术研究部
+    // AFFILIATION H_NINJUTSU
     MICHIRU: {user: "michiru", name: "CH0113", cn: "千鸟满"},
     IZUNA: {user: "izuna", name: "Izuna", cn: "九田泉奈"},
     IZUNA_SWIMSUIT: {user: "izuna_swimsuit", name: "CH0179", cn: "九田泉奈（泳装）"},
     TSUKUYO: {user: "tsukuyo", name: "CH0114", cn: "大野月咏"},
     // Seven Prisoners 七囚人
+    // AFFILIATION H_PRISONERS
     WAKAMO: {user: "wakamo", name: "Wakamo", cn: "狐坂若藻"},
     WAKAMO_SCENE_0: {user: "wakamo_scene_0", name: "Wakamo_Scene_0", strict: true},
     WAKAMO_SWIMSUIT: {user: "wakamo_swimsuit", name: "CH0175", cn: "狐坂若藻（泳装）"},
     // ------------------ Shanhaijing ------------------ 山海经
     // Xuanlong Office 玄龙门
+    // AFFILIATION S_XUANLONG
     KISAKI: {user: "kisaki", name: "CH0139", cn: "龙华妃咲"}, // IMPL implemented on 2024/09/25
     MINA: {user: "mina", name: "CH0138", cn: "近卫南"},
     // Xuanwu Merchant Association 玄武商会
+    // AFFILIATION S_XUANWU
     RUMI: {user: "rumi", name: "CH0135", cn: "朱城瑠美"},
-    // 多读音消歧
     REIJO: {user: "reijo", name: "reizyo", cn: "鹿山丽情"}, // IMPL implemented on 2024/09/25
     // Chinese Alchemy Study Club 炼丹术研究会
+    // AFFILIATION S_ALCHEMY
     SAYA: {user: "saya", name: "Saya", cn: "药子纱绫"},
     SAYA_CASUAL: {user: "saya_casual", name: "Saya_casual", cn: "药子纱绫（私服）"},
     // Plum Blossom Garden 梅花园
+    // AFFILIATION S_PLUM
     SHUN: {user: "shun", name: "Shun", cn: "春原瞬"},
     SHUN_YOUNG: {user: "shun_young", name: "CH0066", cn: "春原瞬（幼女）"},
     KOKONA: {user: "kokona", name: "CH0137", cn: "春原心奈"},
     // ------------------- Red Winter ----------------------- 红冬
     // Red Winter Office 红冬事务局
+    // AFFILIATION R_REDWINTEROFFICE
     CHERINO: {user: "cherino", name: "Cherino", cn: "连河切里诺"},
     CHERINO_HOTPSRING: {user: "cherino_hotspring", name: "CH0164", cn: "连河切里诺（温泉）"},
     TOMOE: {user: "tomoe", name: "Tomoe", cn: "佐城智惠"},
@@ -247,11 +282,14 @@ const CharacterTag = {
     MARINA: {user: "marina", name: "Marina", cn: "池仓玛丽娜"},
     MARINA_QIPAO: {user: "marina_qipao", name: "CH0270", cn: "池仓玛丽娜（旗袍）"},
     // Public Works Department 劳务部
+    // AFFILIATION R_PUBLICWORKS
     MINORI: {user: "minori", name: "CH0214", cn: "安守实梨"},
     // Knowledge Liberation Front 知识解放战线
+    // AFFILIATION R_KNOWLEDGE
     MERU: {user: "meru", name: "CH0124", cn: "姬木梅露"},
     MOMIJI: {user: "momiji", name: "momiji", cn: "秋泉红叶"},
     // No.227 Special Class 227特别班
+    // AFFILIATION R_SPECIALCLASS227
     NODOKA: {user: "nodoka", name: "Nodoka", cn: "天见和香"},
     NODOKA_HOTSPRING: {user: "nodoka_hotspring", name: "CH0165", cn: "天见和香（温泉）"},
     SHIGURE: {user: "shigure", name: "Shigure", cn: "间宵时雨"},
@@ -260,15 +298,18 @@ const CharacterTag = {
     SHIGURE_HOTSPRING: {user: "shigure_hotspring", name: "CH0123"},
     // --------------------- Valkyrie --------------------- 瓦尔基里
     // Public Security Bureau 公安局
+    // AFFILIATION V_PUBLICSECURITY
     KANNA: {user: "kanna", name: "CH0170", cn: "尾刃叶渚"},
     KANNA_SWIMSUIT: {user: "kanna_swimsuit", name: "CH0260", cn: "尾刃叶渚（泳装）"},
     // Community Safety Bureau 生活安全局
+    // AFFILIATION V_COMMUNITYSAFETY
     KIRINO: {user: "kirino", name: "kirino", cn: "中务桐乃"},
     KIRINO_SWIMSUIT: {user: "kirino_swimsuit", name: "CH0262", cn: "中务桐乃（泳装）"},
     FUBUKI: {user: "fubuki", name: "CH0141", cn: "合欢垣吹雪"},
     FUBUKI_SWIMSUIT: {user: "fubuki_swimsuit", name: "CH0261", cn: "合欢垣吹雪（泳装）"},
     // ---------------------- Arius ----------------------- 阿里乌斯
-    // 白洲梓划在圣三一下
+    // Arius Squad 阿里乌斯小队
+    // AFFILIATION AR_SQUAD
     ATSUKO: {user: "atsuko", name: "Atsuko", cn: "秤亚津子"},
     ATSUKO_SWIMSUIT: {user: "atsuko_swimsuit", name: "CH0267", cn: "秤亚津子（泳装）"},
     SAORI: {user: "saori", name: "Saori", cn: "锭前纱织"},
@@ -277,8 +318,10 @@ const CharacterTag = {
     HIYORI: {user: "hiyori", name: "Hiyori", cn: "槌永日和"},
     HIYORI_SWIMSUIT: {user: "hiyori_swimsuit", name: "CH0269", cn: "槌永日和（泳装）"},
     MISAKI: {user: "misaki", name: "Misaki", cn: "戒野美咲"},
+    MISAKI_SWIMSUIT: {user: "misaki_swimsuit", name: "CH0268", cn: "戒野美咲（泳装）"}, // IMPL Implemented on 2025/09/03
     // ----------------------- SRT -------------------------
     // RABBIT Platoon RABBIT小队
+    // AFFILIATION SRT_RABBIT
     MIYAKO: {user: "miyako", name: "Miyako", cn: "月雪宫子"},
     MIYAKO_SWIMSUIT: {user: "miyako_swimsuit", name: "CH0215", cn: "月雪宫子（泳装）"},
     MIYU: {user: "miyu", name: "CH0145", cn: "霞泽美游"},
@@ -288,19 +331,24 @@ const CharacterTag = {
     MOE: {user: "moe", name: "Moe", cn: "风仓萌"},
     MOE_SWIMSUIT: {user: "moe_swimsuit", name: "CH0216", cn: "风仓萌（泳装）"},
     // -------------------- Highlander ---------------------- 海兰德
-    // CCC 中央管制中心
+    // Central Control Center 中央管制中心
+    // AFFILIATION HI_CCC
     HIKARI: {user: "hikari", name: "CH0242", cn: "橘光"}, // IMPL implemented on 2025/04/22
     NOZOMI: {user: "nozomi", name: "CH0243", cn: "橘望"}, // IMPL implemented on 2025/04/22
-    // 货物输送管理部
+    // Freight Transport Management Department 货物输送管理部
+    // AFFILIATION HI_FREIGHT
     AOBA: {user: "aoba", name: "CH0288", cn: "内海青叶"}, // IMPL implemented on 2025/04/22
     // ------------- Wild Hunt Academy of Arts -------------- 狂猎艺术学会
     // Occult Research Society 神秘学研究会
+    // AFFILIATION W_OCCULT
     ERI: {user: "eri", name: "CH0304", V4: true, cn: "白尾艾利"}, // IMPL Implemented on 2025/08/22
     KANOE: {user: "kanoe", name: "CH0306", V4: true, cn: "板垣庚"}, // IMPL Implemented on 2025/08/22
     // ------------ Somewhere Outside Kivotos ------------ 联动角色
     // VOCALOID V家
+    // AFFILIATION VOCALOID
     MIKU: {user: "miku", name: "CH9999", cn: "[联动] 初音未来"},
     // Academy City 学园都市
+    // AFFILIATION ACADEMYCITY
     MIKOTO: {user: "mikoto", name: "CH9998", cn: "[联动] 御坂美琴"},
     SHOKUHOU_MISAKI: {user: "shokuhou_misaki", name: "CH9997", cn: "[联动] 食蜂操祈"}, // 食蜂操祈和阿里乌斯的戒野美咲撞名了，故前者只能通过全名查询
     RUIKO: {user: "ruiko", name: "CH0996", cn: "[联动] 佐天泪子"},
