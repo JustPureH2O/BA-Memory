@@ -343,6 +343,9 @@ const CharacterTag = {
     // AFFILIATION W_OCCULT
     ERI: {user: "eri", name: "CH0304", V4: true, cn: "白尾艾利"}, // IMPL Implemented on 2025/08/22
     KANOE: {user: "kanoe", name: "CH0306", V4: true, cn: "板垣庚"}, // IMPL Implemented on 2025/08/22
+    // Free Trade Cartel 特殊交易部
+    MIYO: {user: "miyo", name: "CH0317", V4: true, cn: "樱井美代"}, // IMPL Implemented on 2025/09/24
+    FUYU: {user: "fuyu", name: "CH0318", V4: true, cn: "若狭冬"}, // IMPL Implemented on 2025/09/24
     // ------------ Somewhere Outside Kivotos ------------ 联动角色
     // VOCALOID V家
     // AFFILIATION VOCALOID
@@ -374,7 +377,7 @@ function changeHandler(a, isAnimation = false) {
                 let frame = document.createElement('iframe');
 
                 frame.id = 'container-box';
-                frame.src = `https://api.justpureh2o.cn/v1/ba-memory/?name=${CharacterTag[ch].user}&animation=${animation.options[animation.selectedIndex].value}${repeat ? '' : '&noRepeat=true'}${exp ? '&export' : ''}${appreciation ? '&appreciation' : ''}${exposureFix ? '' : '&lightFix=false'}`;
+                frame.src = `https://api.justpureh2o.cn/v1/ba-memory/?name=${CharacterTag[ch].user}&animation=${animation.options[animation.selectedIndex].value}${repeat ? '' : '&noRepeat'}${exp ? '&export' : ''}${appreciation ? '&appreciation' : ''}${exposureFix ? '' : '&noLightFix'}`;
                 client.appendChild(frame);
                 if (!isAnimation) {
                     document.querySelector('#container-box').contentWindow.addEventListener('message', (e) => {

@@ -70,9 +70,9 @@ class Player {
         if (options.get('width') !== null) this.options['width'] = options.get('width');
         if (options.get('ratio') !== null) this.options['ratio'] = options.get('ratio');
         if (options.get('mute') !== null) this.options['mute'] = options.get('mute');
-        if (options.get('noRepeat') !== null) this.options['noRepeat'] = options.get('noRepeat');
+        if (options.get('noRepeat') !== null) this.options['noRepeat'] = true;
         if (options.get('animation') !== null) this.options['animation'] = options.get('animation');
-        if (options.get('lightFix') !== null) this.options['lightFix'] = options.get('lightFix');
+        if (options.get('noLightFix') !== null) this.options['lightFix'] = false;
     }
 
     getCanvasArguments() {
@@ -121,9 +121,14 @@ class Player {
 
     fixLightExposure() {
         if (!this.options['lightFix']) return;
+        let cnt = 0;
         for (let slot of this.model.skeleton.slots) {
-            if (slot.data.blendMode === 1) slot.data.blendMode = 3;
+            if (slot.data.blendMode === 1) {
+                slot.data.blendMode = 3;
+                cnt++;
+            }
         }
+        console.info(`Slot exposure fixed: ${cnt}/${this.model.skeleton.slots.length}`);
     }
 
     async play() {

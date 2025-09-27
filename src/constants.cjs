@@ -356,6 +356,10 @@ const CharacterTag = {
     // AFFILIATION W_OCCULT
     ERI: {user: "eri", name: "CH0304", V4: true}, // IMPL Implemented on 2025/08/22
     KANOE: {user: "kanoe", name: "CH0306", V4: true}, // IMPL Implemented on 2025/08/22
+    // Free Trade Cartel 特殊交易部
+    // AFFILIATION W_TRADE
+    MIYO: {user: "miyo", name: "CH0317", V4: true}, // IMPL Implemented on 2025/09/24
+    FUYU: {user: "fuyu", name: "CH0318", V4: true}, // IMPL Implemented on 2025/09/24
     // ------------ Somewhere Outside Kivotos ------------ 联动角色
     // VOCALOID V家
     // AFFILIATION VOCALOID
