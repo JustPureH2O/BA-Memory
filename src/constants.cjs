@@ -360,6 +360,7 @@ const CharacterTag = {
     // AFFILIATION W_TRADE
     MIYO: {user: "miyo", name: "CH0317", V4: true}, // IMPL Implemented on 2025/09/24
     FUYU: {user: "fuyu", name: "CH0318", V4: true}, // IMPL Implemented on 2025/09/24
+    RITSU: {user: "ritsu", name: "CH0319", V4: true}, // IMPL Implemented on 2025/10/08
     // ------------ Somewhere Outside Kivotos ------------ 联动角色
     // VOCALOID V家
     // AFFILIATION VOCALOID
@@ -369,15 +370,17 @@ const CharacterTag = {
     MIKOTO: {user: "mikoto", name: "CH9998"},
     SHOKUHOU_MISAKI: {user: "shokuhou_misaki", name: "CH9997"}, // 食蜂操祈和阿里乌斯的戒野美咲撞名了，故前者只能通过全名查询
     RUIKO: {user: "ruiko", name: "CH0996"},
+    // --------------------- Others ----------------------- 其他角色
+    HOSHINO_MIDAUTUMN: {user: "hoshino_midautumn", name: "hoshino_midautumn", format: 1, strict: true}
 }
 
 function queryByName(name) {
-    if (name === null) return;
+    if (name === null) return ['./assets/Azusa_home/Azusa_home', CharacterTag['AZUSA']];
     for (let i in CharacterTag) {
         if (CharacterTag[i]['user'].toLowerCase() === name.toLowerCase() || CharacterTag[i]['name'].toLowerCase() === name.toLowerCase()) {
             let res = CharacterTag[i]['name'];
             if (CharacterTag[i]['strict'] === undefined && res.indexOf('_home') === -1) res += '_home';
-            return [`./assets/${res}/${res}.skel`, CharacterTag[i]["V4"]];
+            return [`./assets/${res}/${res}`, CharacterTag[i]];
         }
     }
     throw new Error(`Error when querying with name: ${name}! Please check your input`);

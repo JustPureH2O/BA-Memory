@@ -10,10 +10,14 @@ class Player {
     audio;
     playerInfo = {debug: false, hasDefault: true, mute: false};
     isPlaying = false;
+    format;
+    injectSettings;
 
-    constructor(options, src = './assets/CH0273_home/CH0273_home.skel') {
+    constructor(options, src, format, settings) {
         document.title = `${src.substring(src.lastIndexOf('/') + 1, src.lastIndexOf('.'))}`;
         this.src = src;
+        this.format = format;
+        this.injectSettings = settings;
         this.baseUrl = src.substring(0, src.lastIndexOf('/') + 1);
         this.moveConfigs(options);
     }
@@ -46,10 +50,11 @@ class Player {
 
     setup() {
         let width = this.options['width'], height = this.options['width'] * this.options['ratio'];
-        this.app = new PIXI.Application({
+        let playerOptions = Object.assign({
             width: width,
             height: height,
-        });
+        }, this.injectSettings);
+        this.app = new PIXI.Application(playerOptions);
         document.body.appendChild(this.app.view);
     }
 
@@ -134,11 +139,11 @@ class Player {
     async play() {
         this.cleanup();
         console.warn(`pixi-spine support for models created by Spine v4.2 or upper has yet unimplemented. spine-runtime from EsotericSoftware is used here!`);
-        PIXI.Assets.add({alias: 'skel', src: this.src});
-        PIXI.Assets.add({alias: 'atlas', src: this.src.replace('.skel', '.atlas')});
+        PIXI.Assets.add({alias: 'skel', src: this.src + this.format});
+        PIXI.Assets.add({alias: 'atlas', src: this.src + '.atlas'});
         await PIXI.Assets.load(['skel', 'atlas']);
         this.model = SpineV4.from("skel", "atlas");
-        this.fixLightExposure()
+        this.fixLightExposure();
 
         console.log(`Version: ${this.model.state.data.skeletonData.version}\nWidth: ${this.model.width}\nHeight: ${this.model.height}\nWH Ratio: ${this.model.width / this.model.height}`);
         this.setup();
@@ -191,6 +196,3 @@ class Player {
 export {
     Player
 }
-
-//generatetexture
-

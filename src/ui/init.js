@@ -346,6 +346,7 @@ const CharacterTag = {
     // Free Trade Cartel 特殊交易部
     MIYO: {user: "miyo", name: "CH0317", V4: true, cn: "樱井美代"}, // IMPL Implemented on 2025/09/24
     FUYU: {user: "fuyu", name: "CH0318", V4: true, cn: "若狭冬"}, // IMPL Implemented on 2025/09/24
+    RITSU: {user: "ritsu", name: "CH0319", V4: true, cn: "薄叶律"}, // IMPL Implemented on 2025/10/08
     // ------------ Somewhere Outside Kivotos ------------ 联动角色
     // VOCALOID V家
     // AFFILIATION VOCALOID
@@ -355,6 +356,8 @@ const CharacterTag = {
     MIKOTO: {user: "mikoto", name: "CH9998", cn: "[联动] 御坂美琴"},
     SHOKUHOU_MISAKI: {user: "shokuhou_misaki", name: "CH9997", cn: "[联动] 食蜂操祈"}, // 食蜂操祈和阿里乌斯的戒野美咲撞名了，故前者只能通过全名查询
     RUIKO: {user: "ruiko", name: "CH0996", cn: "[联动] 佐天泪子"},
+    // --------------------- Others ----------------------- 其他角色
+    HOSHINO_MIDAUTUMN: {user: "hoshino_midautumn", name: "hoshino_midautumn", cn: "小鸟游星野（国服中秋）"}
 };
 
 function changeHandler(a, isAnimation = false) {

@@ -1,4 +1,4 @@
-import {Spine} from "pixi-spine";
+import {Spine} from "pixi-spine"
 import * as PIXI from "pixi.js";
 
 class PlayerLegacy {
@@ -10,10 +10,14 @@ class PlayerLegacy {
     audio;
     playerInfo = {debug: false, hasDefault: true, mute: false};
     isPlaying = false;
+    format;
+    injectedSettings;
 
-    constructor(options, src = './assets/Azusa_home/Azusa_home.skel') {
+    constructor(options, src, format, settings) {
         document.title = `${src.substring(src.lastIndexOf('/') + 1, src.lastIndexOf('.'))}`;
         this.src = src;
+        this.format = format;
+        this.injectedSettings = settings;
         this.baseUrl = src.substring(0, src.lastIndexOf('/') + 1);
         this.moveConfigs(options);
     }
@@ -47,10 +51,11 @@ class PlayerLegacy {
 
     setup() {
         let width = this.options['width'], height = this.options['width'] * this.options['ratio'];
-        this.app = new PIXI.Application({
+        let playerOptions = Object.assign({
             width: width,
             height: height,
-        });
+        }, this.injectedSettings);
+        this.app = new PIXI.Application(playerOptions);
         document.body.appendChild(this.app.view);
     }
 
@@ -78,8 +83,8 @@ class PlayerLegacy {
 
     getCanvasArguments() {
         let ret = {scale: 1, scaleX: 1, scaleY: 1, x: 0, y: 0};
-        ret['scaleX'] = this.app.renderer.width / 3000;
-        ret['scaleY'] = this.app.renderer.height / (3000 * screen.height / screen.width);
+        ret['scaleX'] = this.app.renderer.width / 2800;
+        ret['scaleY'] = this.app.renderer.height / (2800 * screen.height / screen.width);
         ret['scale'] = Math.min(ret['scaleX'], ret['scaleY']);
         ret['x'] = this.app.renderer.width / 2;
         ret['y'] = this.app.renderer.height;
@@ -134,8 +139,16 @@ class PlayerLegacy {
 
     async play() {
         this.cleanup();
-        const data = await PIXI.Assets.load(this.src);
-        this.model = new Spine(data.spineData);
+        PIXI.Assets.setPreferences({preferCreateImageBitmap: false}); // To fix the premultiply issue in pixi.js v7 happening on hoshino_midautumn
+        PIXI.Assets.add({alias: 'skel', src: this.src + this.format});
+        PIXI.Assets.add({alias: 'atlas', src: this.src + '.atlas'});
+
+        const data = await PIXI.Assets.load(['skel', 'atlas']);
+        const atlas = PIXI.Assets.get('atlas');
+        atlas.pages.forEach((page) => {
+            page.baseTexture.alphaMode = PIXI.ALPHA_MODES.PMA;
+        })
+        this.model = new Spine(data.skel.spineData);
         this.fixLightExposure();
 
         console.log(`Version: ${this.model.state.data.skeletonData.version}\nWidth: ${this.model.spineData.width}\nHeight: ${this.model.spineData.height}\nWH Ratio: ${this.model.spineData.width / this.model.spineData.height}`);
