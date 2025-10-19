@@ -1,0 +1,90 @@
+
+slogan.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+slogan1
+  rotate: false
+  xy: 595, 178
+  size: 474, 140
+  orig: 474, 140
+  offset: 0, 0
+  index: -1
+slogan10
+  rotate: false
+  xy: 106, 336
+  size: 94, 22
+  orig: 94, 22
+  offset: 0, 0
+  index: -1
+slogan11
+  rotate: 180
+  xy: 470, 286
+  size: 722, 367
+  orig: 722, 367
+  offset: 0, 0
+  index: -1
+slogan12
+  rotate: false
+  xy: 580, 4
+  size: 598, 196
+  orig: 598, 196
+  offset: 0, 0
+  index: -1
+slogan2
+  rotate: false
+  xy: 2, 172
+  size: 487, 147
+  orig: 487, 147
+  offset: 0, 0
+  index: -1
+slogan3
+  rotate: false
+  xy: 2, 360
+  size: 505, 292
+  orig: 505, 292
+  offset: 0, 0
+  index: -1
+slogan4
+  rotate: true
+  xy: 236, 8
+  size: 163, 178
+  orig: 163, 178
+  offset: 0, 0
+  index: -1
+slogan5
+  rotate: false
+  xy: 109, 121
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+slogan6
+  rotate: false
+  xy: 392, 33
+  size: 201, 205
+  orig: 201, 205
+  offset: 0, 0
+  index: -1
+slogan7
+  rotate: false
+  xy: 111, 6
+  size: 123, 78
+  orig: 123, 78
+  offset: 0, 0
+  index: -1
+slogan8
+  rotate: false
+  xy: 2, 52
+  size: 116, 118
+  orig: 116, 118
+  offset: 0, 0
+  index: -1
+slogan9
+  rotate: false
+  xy: 2, 334
+  size: 103, 24
+  orig: 103, 24
+  offset: 0, 0
+  index: -1
