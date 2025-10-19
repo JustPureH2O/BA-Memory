@@ -144,10 +144,13 @@ class PlayerLegacy {
         PIXI.Assets.add({alias: 'atlas', src: this.src + '.atlas'});
 
         const data = await PIXI.Assets.load(['skel', 'atlas']);
-        const atlas = PIXI.Assets.get('atlas');
-        atlas.pages.forEach((page) => {
-            page.baseTexture.alphaMode = PIXI.ALPHA_MODES.PMA;
-        })
+        if (this.src.includes('midautumn')) {
+            // Force PMA Alpha - Fix rendering issues in hoshino_midautumn
+            const atlas = PIXI.Assets.get('atlas');
+            atlas.pages.forEach((page) => {
+                page.baseTexture.alphaMode = PIXI.ALPHA_MODES.PMA;
+            });
+        }
         this.model = new Spine(data.skel.spineData);
         this.fixLightExposure();
 

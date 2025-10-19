@@ -371,7 +371,7 @@ const CharacterTag = {
     SHOKUHOU_MISAKI: {user: "shokuhou_misaki", name: "CH9997"}, // 食蜂操祈和阿里乌斯的戒野美咲撞名了，故前者只能通过全名查询
     RUIKO: {user: "ruiko", name: "CH0996"},
     // --------------------- Others ----------------------- 其他角色
-    HOSHINO_MIDAUTUMN: {user: "hoshino_midautumn", name: "hoshino_midautumn", format: 1, strict: true}
+    HOSHINO_MIDAUTUMN: {user: "hoshino_midautumn", name: "Hoshino_midautumn", format: 1, strict: true, PMA: true}
 }
 
 function queryByName(name) {

@@ -357,7 +357,7 @@ const CharacterTag = {
     SHOKUHOU_MISAKI: {user: "shokuhou_misaki", name: "CH9997", cn: "[联动] 食蜂操祈"}, // 食蜂操祈和阿里乌斯的戒野美咲撞名了，故前者只能通过全名查询
     RUIKO: {user: "ruiko", name: "CH0996", cn: "[联动] 佐天泪子"},
     // --------------------- Others ----------------------- 其他角色
-    HOSHINO_MIDAUTUMN: {user: "hoshino_midautumn", name: "hoshino_midautumn", cn: "小鸟游星野（国服中秋）"}
+    HOSHINO_MIDAUTUMN: {user: "hoshino_midautumn", name: "Hoshino_midautumn", cn: "小鸟游星野（国服中秋）"}
 };
 
 function changeHandler(a, isAnimation = false) {
