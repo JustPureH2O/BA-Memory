@@ -18,6 +18,7 @@
     height: 100%;
     background: rgb(88, 88, 88);
     transition: left ease .2s;
+    z-index: 1;
 }
 
 .header {
@@ -80,6 +81,14 @@
     flex-direction: column;
     background: inherit;
     margin: .5em 0 0 1.5em;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
 }
 
 span {

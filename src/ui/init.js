@@ -418,6 +418,7 @@ function changeHandler(a, isAnimation = false) {
     let selector = document.getElementById('model-selector');
     let parent = document.getElementById('parent');
     let checkbox = document.getElementsByName('appendixes');
+    let footer_commit_date = document.getElementById('commit_date');
     for (let ch in CharacterTag) {
         selector.insertAdjacentHTML("beforeend", `<option value="${CharacterTag[ch].name}">${CharacterTag[ch].user} / ${CharacterTag[ch].cn}</option>`);
     }
@@ -428,4 +429,9 @@ function changeHandler(a, isAnimation = false) {
         }
     });
     for (let o of checkbox) o.addEventListener('change', function () { changeHandler(true); });
+    fetch('https://api.github.com/repos/JustPureH2O/BA-Memory/git/refs/heads/master').then(res => res.json()).then(data => {
+        fetch(data['object']['url']).then(res => res.json()).then(data => {
+            footer_commit_date.innerHTML = `${data['author']['date']} - ${data['message']}`;
+        })
+    })
 })();
