@@ -139,7 +139,9 @@ const CharacterTag = {
     // Trinity Vigilante Crew 圣三一自警团
     // AFFILIATION T_VIGILANTE
     REISA: {user: "reisa", name: "CH0167", cn: "宇泽玲纱"},
+    REISA_MAGICAL: {user: "reisa_magical", name: "CH0326", cn: "宇泽玲纱（魔法）"}, // IMPL Implemented on 2025/10/22
     SUZUMI: {user: "suzumi", name: "Suzumi", cn: "守月铃美"},
+    SUZUMI_MAGICAL: {user: "suzumi_magical", name: "CH0325", cn: "守月铃美（魔法）"}, // IMPL Implemented on 2025/10/22
     // Supplementary Lessons Department 补习部
     // AFFILIATION T_SUPPLEMENTARY
     KOHARU: {user: "koharu", name: "Koharu", cn: "下江小春"},
@@ -150,6 +152,9 @@ const CharacterTag = {
     HIFUMI_SWIMSUIT: {user: "hifumi_swimsuit", name: "CH0058", cn: "阿慈谷日富美（泳装）"},
     HANAKO: {user: "hanako", name: "Hanako", cn: "浦和花子"},
     HANAKO_SWIMSUIT: {user: "hanako_swimsuit", name: "CH0209", cn: "浦和花子（泳装）"},
+    // Helmet Gang 头盔团
+    // AFFILIATION T_HELMETGANG
+    RABU: {user: "rabu", name: "CH0166", cn: "河驹风兰舞"}, // IMPL Implemented on 2025/10/22
     // ------------- Millennium Science School --------------- 千年科学学院
     // Seminar 研讨会
     // AFFILIATION M_SEMINAR
@@ -429,9 +434,4 @@ function changeHandler(a, isAnimation = false) {
         }
     });
     for (let o of checkbox) o.addEventListener('change', function () { changeHandler(true); });
-    fetch('https://api.github.com/repos/JustPureH2O/BA-Memory/git/refs/heads/master').then(res => res.json()).then(data => {
-        fetch(data['object']['url']).then(res => res.json()).then(data => {
-            footer_commit_date.innerHTML = `${data['author']['date']} - ${data['message']}`;
-        })
-    })
 })();

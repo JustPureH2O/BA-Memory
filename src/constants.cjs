@@ -147,7 +147,9 @@ const CharacterTag = {
     // Trinity Vigilante Crew 圣三一自警团
     // AFFILIATION T_VIGILANTE
     REISA: {user: "reisa", name: "CH0167"},
+    REISA_MAGICAL: {user: "reisa_magical", name: "CH0326", V4: true}, // IMPL Implemented on 2025/10/22
     SUZUMI: {user: "suzumi", name: "Suzumi"},
+    SUZUMI_MAGICAL: {user: "suzumi_magical", name: "CH0325", V4: true}, // IMPL Implemented on 2025/10/22
     // Supplementary Lessons Department 补习部
     // AFFILIATION T_SUPPLEMENTARY
     KOHARU: {user: "koharu", name: "Koharu"},
@@ -161,6 +163,9 @@ const CharacterTag = {
     HIHUMI_SWIMSUIT: {user: "hihumi_swimsuit", name: "CH0058"},
     HANAKO: {user: "hanako", name: "Hanako"},
     HANAKO_SWIMSUIT: {user: "hanako_swimsuit", name: "CH0209"},
+    // Helmet Gang 头盔团
+    // AFFILIATION T_HELMETGANG
+    RABU: {user: "rabu", name: "CH0166", V4: true}, // IMPL Implemented on 2025/10/22
     // ------------- Millennium Science School --------------- 千年科学学院
     // Seminar 研讨会
     // AFFILIATION M_SEMINAR
