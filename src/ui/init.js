@@ -324,6 +324,7 @@ const CharacterTag = {
     HIYORI_SWIMSUIT: {user: "hiyori_swimsuit", name: "CH0269", cn: "槌永日和（泳装）"},
     MISAKI: {user: "misaki", name: "Misaki", cn: "戒野美咲"},
     MISAKI_SWIMSUIT: {user: "misaki_swimsuit", name: "CH0268", cn: "戒野美咲（泳装）"}, // IMPL Implemented on 2025/09/03
+    SUBARU: {user: "subaru", name: "CH0309", cn: "梯昂"}, // IMPL Implemented on 2025/11/12
     // ----------------------- SRT -------------------------
     // RABBIT Platoon RABBIT小队
     // AFFILIATION SRT_RABBIT

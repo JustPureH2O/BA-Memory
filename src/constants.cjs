@@ -337,6 +337,7 @@ const CharacterTag = {
     HIYORI_SWIMSUIT: {user: "hiyori_swimsuit", name: "CH0269"},
     MISAKI: {user: "misaki", name: "Misaki"},
     MISAKI_SWIMSUIT: {user: "misaki_swimsuit", name: "CH0268", V4: true}, // IMPL Implemented on 2025/09/03
+    SUBARU: {user: "subaru", name: "CH0309", V4: true}, // IMPL Implemented on 2025/11/12
     // ----------------------- SRT -------------------------
     // RABBIT Platoon RABBIT小队
     // AFFILIATION SRT_RABBIT

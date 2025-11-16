@@ -61,15 +61,16 @@ class PlayerLegacy {
 
     moveConfigs(options) {
         this.options = {
-            width: 3092,
+            width: 4096,
             mute: false,
             debug: false,
             noRepeat: false,
             animation: 'start_idle_01',
-            ratio: 1080 / 1920,
+            ratio: 0.5625,
             fixed: false,
             export: false,
             lightFix: true,
+            scale: 1.0,
         }
         if (options.get('export') !== null) this.options['export'] = true;
         if (options.get('fixed') !== null) this.options['fixed'] = true;
@@ -79,13 +80,12 @@ class PlayerLegacy {
         if (options.get('noRepeat') !== null) this.options['noRepeat'] = true;
         if (options.get('animation') !== null) this.options['animation'] = options.get('animation');
         if (options.get('noLightFix') !== null) this.options['lightFix'] = false;
+        if (options.get('scale') !== null && options.get('scale') >= 0.0) this.options['scale'] = options.get('scale');
     }
 
     getCanvasArguments() {
         let ret = {scale: 1, scaleX: 1, scaleY: 1, x: 0, y: 0};
-        ret['scaleX'] = this.app.renderer.width / 2800;
-        ret['scaleY'] = this.app.renderer.height / (2800 * screen.height / screen.width);
-        ret['scale'] = Math.min(ret['scaleX'], ret['scaleY']);
+        ret['scale'] = this.app.renderer.width / 3000 * this.options['scale'];
         ret['x'] = this.app.renderer.width / 2;
         ret['y'] = this.app.renderer.height;
         return ret;
