@@ -301,6 +301,10 @@ const CharacterTag = {
     SHIGURE_00: {user: "shigure_00", name: "Shigure_00", strict: true, cn: "间宵时雨（背景）A"},
     SHIGURE_01: {user: "shigure_01", name: "Shigure_01", strict: true, cn: "间宵时雨（背景）B"},
     SHIGURE_HOTSPRING: {user: "shigure_hotspring", name: "CH0123"},
+    // Publishing Department 出版部
+    // AFFILIATION R_PUBLISHING
+    YAKUMO: {user: "yakumo", name: "CH0228", cn: "荒槙八云"}, // IMPL Implemented on 2025/11/19
+    TAKANE: {user: "takane", name: "CH0229", cn: "三善贵音"}, // IMPL Implemented on 2025/11/19
     // --------------------- Valkyrie --------------------- 瓦尔基里
     // Public Security Bureau 公安局
     // AFFILIATION V_PUBLICSECURITY
