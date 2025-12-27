@@ -251,9 +251,11 @@ const CharacterTag = {
     // Ninjutsu Research Department 忍术研究部
     // AFFILIATION H_NINJUTSU
     MICHIRU: {user: "michiru", name: "CH0113", cn: "千鸟满"},
+    MICHIRU_DRESS: {user: "michiru_dress", name: "CH0296", cn: "千鸟满（礼服）"}, // IMPL Implemented on 2025/12/24
     IZUNA: {user: "izuna", name: "Izuna", cn: "九田泉奈"},
     IZUNA_SWIMSUIT: {user: "izuna_swimsuit", name: "CH0179", cn: "九田泉奈（泳装）"},
     TSUKUYO: {user: "tsukuyo", name: "CH0114", cn: "大野月咏"},
+    TSUKUYO_DRESS: {user: "tsukuyo_dress", name: "CH0297", cn: "大野月咏（礼服）"}, // IMPL Implemented on 2025/12/24
     // Seven Prisoners 七囚人
     // AFFILIATION H_PRISONERS
     WAKAMO: {user: "wakamo", name: "Wakamo", cn: "狐坂若藻"},

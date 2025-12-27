@@ -1,0 +1,929 @@
+CH0296_home.png
+	size: 2048, 2048
+	filter: Linear, Linear
+	scale: 0.7
+B_hair_01
+	bounds: 647, 279, 158, 572
+	offsets: 5, 5, 166, 577
+	rotate: 90
+B_hair_02
+	bounds: 1269, 64, 209, 303
+	offsets: 4, 4, 216, 310
+	rotate: 270
+B_hair_03
+	bounds: 126, 1492, 490, 677
+	rotate: 90
+B_hair_04
+	bounds: 557, 877, 250, 463
+	offsets: 5, 4, 256, 470
+	rotate: 270
+B_hair_05
+	bounds: 1656, 1004, 333, 328
+	offsets: 2, 2, 337, 333
+	rotate: 180
+Choker_01
+	bounds: 56, 1874, 13, 25
+	offsets: 4, 4, 23, 34
+Choker_02
+	bounds: 322, 1970, 22, 12
+	offsets: 4, 5, 31, 21
+Choker_03
+	bounds: 158, 1958, 15, 24
+	offsets: 5, 5, 25, 34
+Choker_05
+	bounds: 2, 1857, 19, 23
+	offsets: 5, 5, 29, 32
+Dress_skirt_01
+	bounds: 367, 404, 121, 406
+	offsets: 2, 3, 125, 409
+	rotate: 90
+Dress_skirt_03
+	bounds: 1639, 852, 279, 407
+	offsets: 0, 2, 281, 410
+	rotate: 90
+Dress_skirt_04
+	bounds: 2, 894, 616, 434
+	offsets: 1, 1, 617, 435
+Dress_skirt_05
+	bounds: 1125, 1559, 576, 423
+	offsets: 0, 1, 576, 424
+Dress_skirt_06
+	bounds: 1005, 1098, 607, 414
+	offsets: 3, 0, 610, 416
+Dress_skirt_07
+	bounds: 249, 748, 498, 278
+	offsets: 2, 0, 500, 280
+Dress_torso_01
+	bounds: 2, 333, 231, 218
+	offsets: 3, 2, 236, 223
+Dress_torso_02
+	bounds: 222, 97, 137, 152
+	offsets: 2, 4, 144, 159
+Dress_torso_03
+	bounds: 108, 666, 235, 324
+	offsets: 3, 3, 240, 327
+	rotate: 270
+Dress_torso_04
+	bounds: 112, 1424, 108, 142
+	offsets: 4, 4, 116, 147
+Dress_torso_05
+	bounds: 1632, 1688, 129, 155
+	offsets: 4, 4, 134, 162
+Dress_torso_06
+	bounds: 1259, 551, 260, 263
+	offsets: 1, 5, 263, 272
+	rotate: 180
+Dress_torso_07
+	bounds: 1203, 303, 197, 292
+	offsets: 4, 0, 203, 293
+	rotate: 270
+Dress_torso_08
+	bounds: 736, 34, 249, 186
+	offsets: 3, 5, 258, 195
+Dress_torso_09
+	bounds: 1305, 254, 191, 237
+	offsets: 4, 3, 197, 243
+	rotate: 270
+Earring_01
+	bounds: 1597, 551, 76, 66
+	offsets: 5, 3, 84, 74
+Earring_02
+	bounds: 84, 1974, 8, 8
+	offsets: 6, 6, 20, 20
+Earring_03
+	bounds: 1187, 1426, 49, 48
+	offsets: 4, 5, 57, 57
+FX_Star
+	bounds: 387, 32, 270, 235
+F_Nose
+	bounds: 130, 1920, 31, 27
+	offsets: 5, 5, 41, 37
+Gacha_01
+	bounds: 465, 1015, 91, 98
+	offsets: 5, 4, 102, 107
+Gacha_02
+	bounds: 915, 979, 102, 72
+	offsets: 4, 5, 111, 83
+Gacha_03
+	bounds: 447, 1917, 96, 65
+	offsets: 5, 5, 106, 74
+Gacha_04
+	bounds: 1102, 109, 91, 100
+	offsets: 5, 4, 99, 108
+Gacha_05
+	bounds: 148, 297, 85, 93
+	offsets: 4, 5, 95, 102
+Hair_Bloom_01
+	bounds: 1685, 1691, 291, 349
+	offsets: 1, 0, 292, 350
+	rotate: 90
+Hair_Bloom_02
+	bounds: 223, 1296, 320, 775
+	rotate: 90
+Halo
+	bounds: 732, 373, 211, 384
+	rotate: 270
+Hat
+	bounds: 621, 1024, 396, 461
+	offsets: 19, 2, 417, 464
+	rotate: 90
+Hat_ear_shadow
+	bounds: 209, 265, 145, 215
+	offsets: 3, 3, 148, 220
+L_Ear_01
+	bounds: 1081, 780, 213, 95
+	offsets: 5, 5, 222, 104
+L_Ear_02
+	bounds: 1500, 901, 227, 209
+	offsets: 2, 3, 234, 216
+L_Eyebrows_01
+	bounds: 1925, 106, 121, 105
+	offsets: 4, 5, 130, 114
+L_Eyebrows_02
+	bounds: 2, 26, 123, 101
+	offsets: 4, 3, 132, 109
+	rotate: 270
+L_Eyebrows_03
+	bounds: 1810, 66, 121, 99
+	offsets: 5, 5, 129, 106
+L_Eyebrows_04
+	bounds: 1166, 44, 116, 86
+	offsets: 5, 5, 125, 96
+L_Eyebrows_05
+	bounds: 644, 77, 121, 101
+	offsets: 4, 4, 129, 108
+L_Finger_thumb_01
+	bounds: 1296, 502, 71, 86
+	offsets: 4, 4, 78, 94
+L_Forearm_01
+	bounds: 346, 657, 109, 394
+	offsets: 4, 4, 117, 401
+	rotate: 90
+L_Forearm_02
+	bounds: 1080, 835, 438, 426
+	offsets: 2, 4, 444, 433
+L_T_eyebrow_01
+	bounds: 971, 118, 57, 76
+	offsets: 4, 4, 65, 83
+L_T_eyebrow_02
+	bounds: 356, 318, 59, 77
+	offsets: 4, 4, 65, 83
+L_T_eyebrow_03
+	bounds: 1696, 1628, 64, 67
+	offsets: 4, 4, 72, 74
+L_T_eyebrow_04
+	bounds: 1512, 870, 81, 33
+	offsets: 5, 5, 89, 43
+L_T_eyebrow_05
+	bounds: 804, 1892, 78, 90
+	offsets: 6, 4, 87, 97
+L_T_eyebrow_06
+	bounds: 1014, 931, 80, 33
+	offsets: 5, 5, 89, 43
+L_bangle_B
+	bounds: 1514, 1513, 123, 81
+	offsets: 4, 5, 131, 91
+L_bangle_F
+	bounds: 597, 823, 129, 88
+	offsets: 3, 5, 135, 95
+L_eye white_01
+	bounds: 1015, 956, 169, 169
+	offsets: 3, 4, 176, 176
+L_eye_01_eye1
+	bounds: 1016, 742, 68, 80
+	offsets: 4, 4, 76, 88
+L_eye_01_eye2
+	bounds: 1727, 936, 67, 80
+	offsets: 4, 5, 76, 88
+L_eye_01_eye3
+	bounds: 88, 1873, 21, 28
+	offsets: 5, 4, 30, 36
+L_eye_02_eye1
+	bounds: 445, 1888, 32, 33
+	offsets: 5, 5, 43, 43
+L_eye_02_eye2
+	bounds: 1595, 1949, 32, 33
+	offsets: 5, 5, 43, 43
+L_eye_03_eye1
+	bounds: 209, 1961, 18, 21
+	offsets: 5, 5, 28, 30
+L_eye_03_eye2
+	bounds: 64, 1961, 18, 21
+	offsets: 5, 5, 28, 30
+L_eye_04_eye1
+	bounds: 672, 1964, 16, 18
+	offsets: 4, 4, 25, 26
+L_eye_04_eye2
+	bounds: 437, 1963, 17, 19
+	offsets: 4, 3, 25, 26
+L_eye_05_eye1
+	bounds: 2029, 1969, 12, 13
+	offsets: 5, 5, 22, 23
+L_eye_05_eye2
+	bounds: 1068, 1970, 12, 12
+	offsets: 5, 6, 22, 24
+L_eye_06_eye1
+	bounds: 454, 1970, 17, 12
+	offsets: 4, 5, 25, 22
+L_eye_06_eye2
+	bounds: 306, 1970, 16, 12
+	offsets: 4, 5, 25, 22
+L_eyelid_01
+	bounds: 372, 266, 165, 137
+	offsets: 5, 5, 174, 147
+L_eyelid_02
+	bounds: 1888, 205, 158, 125
+	offsets: 5, 5, 167, 134
+	rotate: 180
+L_eyelid_03
+	bounds: 496, 196, 148, 117
+	offsets: 5, 5, 156, 127
+L_eyelid_04
+	bounds: 788, 1190, 156, 127
+	offsets: 5, 3, 165, 134
+L_palm_01
+	bounds: 635, 502, 96, 121
+	offsets: 4, 4, 106, 129
+L_palm_02
+	bounds: 743, 30, 48, 121
+	offsets: 5, 4, 56, 127
+L_palm_03
+	bounds: 1477, 222, 132, 270
+	offsets: 5, 4, 141, 277
+	rotate: 270
+L_palm_04
+	bounds: 999, 1418, 45, 87
+	offsets: 5, 4, 55, 94
+L_sidehair_01
+	bounds: 874, 662, 280, 466
+	offsets: 5, 4, 290, 473
+	rotate: 90
+L_sidehair_02
+	bounds: 1187, 134, 85, 62
+	offsets: 5, 5, 95, 72
+L_sidehair_05
+	bounds: 1422, 167, 220, 146
+	offsets: 4, 5, 228, 153
+	rotate: 180
+L_sidehair_06
+	bounds: 1793, 959, 66, 44
+	offsets: 5, 5, 76, 53
+L_sidehair_07
+	bounds: 1269, 81, 134, 148
+	offsets: 3, 5, 141, 158
+L_sidehair_08
+	bounds: 724, 81, 189, 158
+	offsets: 4, 6, 196, 168
+R_Ear_01
+	bounds: 580, 110, 142, 126
+	offsets: 3, 4, 148, 133
+R_Ear_02
+	bounds: 726, 560, 199, 230
+	offsets: 5, 3, 208, 236
+	rotate: 270
+R_Eyebrows_01
+	bounds: 743, 1275, 99, 104
+	offsets: 4, 5, 108, 112
+R_Eyebrows_02
+	bounds: 465, 20, 96, 94
+	offsets: 4, 4, 105, 102
+R_Eyebrows_03
+	bounds: 1952, 492, 94, 97
+	offsets: 5, 5, 104, 106
+R_Eyebrows_04
+	bounds: 1647, 893, 86, 70
+	offsets: 4, 4, 92, 77
+R_Eyebrows_05
+	bounds: 392, 584, 99, 96
+	offsets: 4, 4, 106, 104
+R_Finger_baby_01_arm1
+	bounds: 2007, 1543, 38, 25
+	offsets: 5, 6, 47, 35
+R_Finger_baby_01_arm2
+	bounds: 62, 1899, 36, 33
+	offsets: 5, 5, 45, 42
+R_Finger_baby_02_arm1
+	bounds: 504, 1399, 56, 34
+	offsets: 5, 5, 66, 43
+R_Finger_baby_02_arm2
+	bounds: 1662, 1826, 40, 36
+	offsets: 5, 5, 48, 46
+R_Finger_baby_03_arm1
+	bounds: 2, 380, 67, 52
+	offsets: 4, 5, 74, 61
+R_Finger_baby_03_arm2
+	bounds: 102, 1571, 35, 28
+	offsets: 4, 5, 44, 39
+R_Finger_index_01_arm1
+	bounds: 658, 1392, 52, 28
+	offsets: 6, 6, 64, 39
+R_Finger_index_01_arm2
+	bounds: 1084, 1949, 44, 33
+	offsets: 5, 6, 53, 43
+R_Finger_index_02_arm1
+	bounds: 655, 1608, 82, 37
+	offsets: 5, 6, 91, 47
+R_Finger_index_02_arm2
+	bounds: 1999, 1859, 47, 37
+	offsets: 6, 5, 58, 47
+R_Finger_index_03_arm1
+	bounds: 1549, 1922, 55, 60
+	offsets: 3, 5, 61, 68
+R_Finger_index_03_arm2
+	bounds: 1677, 1944, 56, 38
+	offsets: 5, 5, 67, 48
+R_Finger_middle_01_arm1
+	bounds: 437, 1602, 55, 32
+	offsets: 6, 4, 66, 41
+R_Finger_middle_01_arm2
+	bounds: 1237, 1759, 47, 47
+	offsets: 5, 5, 57, 56
+R_Finger_middle_02_arm1
+	bounds: 493, 1610, 71, 38
+	offsets: 6, 3, 82, 46
+R_Finger_middle_02_arm2
+	bounds: 738, 1592, 51, 42
+	offsets: 5, 5, 62, 52
+R_Finger_middle_03_arm1
+	bounds: 392, 1051, 69, 57
+	offsets: 4, 6, 78, 66
+R_Finger_middle_03_arm2
+	bounds: 1734, 1952, 69, 30
+	offsets: 5, 6, 78, 42
+R_Finger_ring_01_arm1
+	bounds: 214, 1467, 45, 28
+	offsets: 6, 5, 56, 38
+R_Finger_ring_01_arm2
+	bounds: 109, 1946, 35, 36
+	offsets: 5, 5, 46, 46
+R_Finger_ring_02_arm1
+	bounds: 565, 1617, 90, 34
+	offsets: 5, 5, 99, 44
+R_Finger_ring_02_arm2
+	bounds: 30, 1932, 48, 50
+	offsets: 5, 6, 58, 62
+R_Finger_ring_03_arm1
+	bounds: 1980, 1568, 66, 51
+	offsets: 4, 4, 75, 59
+R_Finger_ring_03_arm2
+	bounds: 1896, 1943, 59, 39
+	offsets: 4, 6, 68, 49
+R_Finger_thumb_01_arm1
+	bounds: 1634, 1229, 43, 92
+	offsets: 5, 4, 53, 101
+R_Finger_thumb_01_arm2
+	bounds: 1636, 1515, 41, 43
+	offsets: 4, 4, 50, 50
+R_Forearm_01_arm1
+	bounds: 5, 1299, 265, 246
+	offsets: 5, 5, 273, 256
+	rotate: 90
+R_Forearm_01_arm2
+	bounds: 386, 155, 110, 92
+	offsets: 4, 3, 116, 98
+R_Forearm_02_arm1
+	bounds: 877, 788, 438, 195
+	offsets: 2, 5, 442, 204
+R_Forearm_02_arm2
+	bounds: 2, 209, 222, 163
+	offsets: 3, 3, 228, 167
+R_Forearm_03_arm2_fix
+	bounds: 1491, 305, 301, 206
+	offsets: 4, 3, 307, 211
+	rotate: 180
+R_T_eyebrow_01
+	bounds: 1968, 695, 78, 36
+	offsets: 4, 5, 85, 45
+R_T_eyebrow_02
+	bounds: 885, 1192, 79, 38
+	offsets: 4, 2, 85, 45
+R_T_eyebrow_03
+	bounds: 153, 1769, 83, 42
+	offsets: 5, 5, 92, 51
+R_T_eyebrow_04
+	bounds: 2, 837, 51, 64
+	offsets: 4, 5, 58, 72
+R_T_eyebrow_05
+	bounds: 1529, 361, 89, 43
+	offsets: 5, 3, 97, 50
+R_T_eyebrow_06
+	bounds: 954, 604, 51, 64
+	offsets: 4, 4, 58, 72
+R_eye white_01
+	bounds: 241, 549, 156, 167
+	offsets: 4, 5, 164, 176
+R_eye_01_eye1
+	bounds: 191, 584, 61, 85
+	offsets: 4, 4, 69, 92
+R_eye_01_eye2
+	bounds: 1670, 1299, 60, 83
+	offsets: 4, 5, 69, 93
+R_eye_01_eye3
+	bounds: 144, 1861, 21, 27
+	offsets: 5, 5, 30, 36
+R_eye_02_eye1
+	bounds: 275, 1951, 30, 31
+	offsets: 5, 6, 41, 42
+R_eye_02_eye2
+	bounds: 2, 1427, 31, 31
+	offsets: 5, 5, 41, 42
+R_eye_03_eye1
+	bounds: 1679, 1930, 17, 20
+	offsets: 5, 5, 27, 31
+R_eye_03_eye2
+	bounds: 215, 1884, 16, 21
+	offsets: 5, 5, 26, 31
+R_eye_04_eye1
+	bounds: 540, 1965, 17, 17
+	offsets: 4, 5, 25, 27
+R_eye_04_eye2
+	bounds: 1126, 1941, 15, 17
+	offsets: 5, 4, 25, 26
+R_eye_05_eye1
+	bounds: 20, 1971, 11, 11
+	offsets: 5, 6, 20, 22
+R_eye_05_eye2
+	bounds: 1585, 1971, 11, 11
+	offsets: 5, 6, 21, 23
+R_eye_06_eye1
+	bounds: 804, 1971, 16, 11
+	offsets: 4, 6, 25, 23
+R_eye_06_eye2
+	bounds: 688, 1971, 16, 11
+	offsets: 4, 6, 25, 22
+R_eyelid_01
+	bounds: 1519, 584, 130, 143
+	offsets: 5, 4, 140, 152
+R_eyelid_02
+	bounds: 737, 752, 124, 125
+	offsets: 4, 4, 133, 133
+R_eyelid_03
+	bounds: 919, 169, 118, 118
+	offsets: 5, 5, 128, 127
+R_eyelid_04
+	bounds: 1138, 190, 125, 131
+	offsets: 4, 5, 133, 140
+	rotate: 270
+R_palm_01_arm1
+	bounds: 1028, 137, 112, 150
+	offsets: 5, 5, 120, 160
+R_palm_01_arm2
+	bounds: 1727, 730, 68, 47
+	offsets: 4, 6, 77, 58
+R_palm_02_arm1
+	bounds: 1595, 1844, 84, 138
+	offsets: 4, 3, 92, 146
+R_palm_02_arm2
+	bounds: 1795, 160, 103, 104
+	offsets: 4, 3, 111, 113
+R_sidehair_02
+	bounds: 1973, 1156, 73, 256
+	offsets: 4, 5, 82, 265
+R_sidehair_03
+	bounds: 949, 322, 147, 78
+	offsets: 5, 5, 156, 89
+R_sidehair_04
+	bounds: 2, 471, 413, 409
+	offsets: 4, 5, 419, 417
+R_sidehair_05
+	bounds: 1793, 25, 128, 253
+	offsets: 4, 5, 137, 263
+	rotate: 270
+R_sidehair_06
+	bounds: 1413, 68, 308, 224
+	offsets: 6, 171, 320, 400
+R_sidehair_07
+	bounds: 1895, 2, 126, 151
+	offsets: 6, 6, 136, 162
+	rotate: 270
+R_sidehair_07_shadow
+	bounds: 883, 141, 76, 82
+	offsets: 3, 3, 79, 85
+R_sidehair_08
+	bounds: 1417, 1148, 233, 162
+	offsets: 6, 5, 244, 172
+R_sidehair_09
+	bounds: 790, 38, 105, 92
+	offsets: 5, 5, 115, 104
+Ribbon_01
+	bounds: 638, 219, 89, 283
+	offsets: 4, 5, 97, 292
+	rotate: 90
+Ribbon_02
+	bounds: 2, 1595, 78, 278
+	offsets: 3, 1, 86, 281
+Ribbon_03
+	bounds: 2, 1878, 58, 53
+	offsets: 2, 5, 62, 62
+Ribbon_04
+	bounds: 532, 308, 129, 377
+	offsets: 2, 0, 131, 377
+	rotate: 90
+Sweat_01
+	bounds: 2, 1932, 21, 30
+	offsets: 5, 5, 32, 39
+Sweat_02
+	bounds: 142, 1884, 25, 35
+	offsets: 5, 4, 34, 43
+Tail
+	bounds: 1209, 1294, 464, 384
+	offsets: 140, 3, 604, 387
+	rotate: 180
+Tail_Bloom
+	bounds: 256, 1102, 336, 365
+	offsets: 3, 4, 343, 371
+	rotate: 270
+Tail_light
+	bounds: 2, 854, 238, 272
+	offsets: 3, 2, 246, 279
+	rotate: 90
+Torso_01
+	bounds: 965, 476, 180, 184
+	offsets: 3, 3, 186, 191
+Torso_02
+	bounds: 1628, 1307, 409, 418
+	offsets: 0, 1, 410, 421
+	rotate: 90
+bell_01
+	bounds: 188, 1966, 13, 16
+	offsets: 4, 4, 22, 25
+bell_02
+	bounds: 1184, 986, 59, 55
+	offsets: 4, 6, 68, 66
+blossom_01_hair
+	bounds: 610, 1314, 36, 38
+	offsets: 5, 4, 46, 46
+blossom_02_hair
+	bounds: 1905, 1656, 28, 42
+	offsets: 5, 4, 38, 49
+blossom_03_hair
+	bounds: 1244, 1651, 28, 38
+	offsets: 5, 3, 37, 45
+face
+	bounds: 804, 1503, 446, 479
+	offsets: 3, 3, 452, 485
+flush_01_L
+	bounds: 1787, 318, 123, 125
+	offsets: 3, 2, 129, 130
+flush_01_R
+	bounds: 282, 188, 117, 120
+	offsets: 4, 5, 124, 130
+flush_02
+	bounds: 205, 1799, 246, 183
+	offsets: 5, 5, 253, 192
+	rotate: 180
+flying_blossoms_01
+	bounds: 1312, 1100, 79, 57
+	offsets: 3, 3, 85, 61
+flying_blossoms_01_blur
+	bounds: 1933, 1620, 113, 88
+	offsets: 1, 3, 115, 94
+flying_blossoms_02
+	bounds: 1891, 793, 66, 63
+	offsets: 2, 1, 69, 64
+flying_blossoms_02_blur
+	bounds: 2, 1075, 100, 95
+	offsets: 0, 0, 102, 95
+flying_blossoms_03
+	bounds: 937, 743, 88, 55
+	offsets: 1, 0, 89, 55
+flying_blossoms_03_blur
+	bounds: 1769, 761, 114, 90
+	offsets: 0, 0, 118, 90
+flying_blossoms_04
+	bounds: 95, 1343, 49, 36
+	offsets: 2, 2, 54, 41
+flying_blossoms_04_blur
+	bounds: 2, 546, 78, 63
+	offsets: 3, 4, 81, 70
+flying_blossoms_05
+	bounds: 221, 1248, 49, 57
+flying_blossoms_05_blur
+	bounds: 1250, 1673, 81, 84
+	offsets: 0, 4, 83, 88
+flying_blossoms_06
+	bounds: 1480, 1596, 45, 27
+	offsets: 4, 5, 52, 34
+flying_blossoms_06_blur
+	bounds: 426, 766, 81, 64
+flying_blossoms_07
+	bounds: 1332, 1678, 46, 33
+	offsets: 4, 5, 54, 40
+flying_blossoms_07_blur
+	bounds: 1104, 369, 80, 70
+	offsets: 0, 0, 81, 70
+flying_blossoms_08
+	bounds: 1061, 437, 64, 42
+	offsets: 0, 3, 67, 49
+flying_blossoms_08_blur
+	bounds: 563, 1354, 99, 80
+	offsets: 0, 0, 99, 83
+flying_blossoms_09
+	bounds: 774, 439, 53, 57
+	offsets: 1, 2, 57, 61
+flying_blossoms_09_blur
+	bounds: 1952, 1893, 91, 89
+	offsets: 0, 1, 91, 90
+flying_blossoms_10
+	bounds: 1742, 602, 71, 49
+	offsets: 0, 1, 71, 50
+flying_blossoms_10_blur
+	bounds: 68, 791, 102, 77
+	offsets: 0, 0, 104, 80
+flying_blossoms_11
+	bounds: 315, 389, 76, 57
+	offsets: 0, 3, 78, 62
+flying_blossoms_11_blur
+	bounds: 1389, 1024, 107, 93
+	offsets: 0, 3, 109, 96
+flying_blossoms_12
+	bounds: 2003, 1700, 43, 54
+	offsets: 3, 2, 49, 57
+flying_blossoms_12_blur
+	bounds: 1642, 141, 83, 84
+	offsets: 0, 0, 83, 87
+flying_blossoms_13
+	bounds: 1459, 654, 62, 63
+	offsets: 0, 1, 64, 66
+flying_blossoms_13_blur
+	bounds: 2, 1333, 95, 94
+	offsets: 2, 0, 97, 94
+flying_blossoms_14
+	bounds: 2, 1568, 61, 44
+	offsets: 0, 2, 62, 47
+flying_blossoms_14_blur
+	bounds: 1341, 792, 88, 77
+	offsets: 0, 0, 91, 78
+fronthair_01
+	bounds: 1616, 255, 209, 430
+	offsets: 4, 5, 218, 441
+	rotate: 90
+fronthair_03
+	bounds: 1012, 54, 98, 334
+	offsets: 5, 5, 106, 342
+	rotate: 90
+fronthair_04
+	bounds: 1402, 715, 162, 374
+	offsets: 3, 3, 168, 377
+	rotate: 270
+fronthair_05
+	bounds: 193, 38, 138, 314
+	offsets: 5, 4, 146, 323
+	rotate: 270
+fronthair_06
+	bounds: 1682, 637, 240, 364
+	offsets: 4, 3, 246, 371
+	rotate: 270
+fronthair_07
+	bounds: 407, 459, 219, 321
+	offsets: 4, 4, 228, 330
+	rotate: 90
+fronthair_08
+	bounds: 2, 67, 281, 263
+	offsets: 5, 0, 288, 267
+fronthair_09
+	bounds: 1650, 429, 345, 326
+	offsets: 4, 4, 351, 333
+hair shadow_01
+	bounds: 2, 81, 126, 133
+	offsets: 4, 4, 133, 141
+hair shadow_02
+	bounds: 220, 104, 65, 122
+	offsets: 5, 4, 74, 130
+hair shadow_03
+	bounds: 854, 61, 164, 182
+	offsets: 5, 4, 174, 191
+hair shadow_04
+	bounds: 53, 604, 138, 207
+	offsets: 5, 4, 146, 214
+hair shadow_05
+	bounds: 28, 123, 159, 160
+	offsets: 4, 3, 167, 167
+hair shadow_06
+	bounds: 550, 354, 58, 153
+	offsets: 4, 5, 66, 162
+	rotate: 90
+hair shadow_07
+	bounds: 804, 1630, 58, 143
+	offsets: 5, 4, 67, 153
+hair shadow_08
+	bounds: 171, 1800, 37, 182
+	offsets: 4, 3, 46, 189
+	rotate: 180
+hair shadow_09
+	bounds: 84, 110, 140, 133
+	offsets: 4, 5, 148, 142
+hair shadow_10
+	bounds: 1646, 411, 133, 149
+	offsets: 4, 4, 141, 157
+hair_light_01
+	bounds: 1983, 1108, 62, 55
+	offsets: 3, 3, 68, 61
+hair_light_02
+	bounds: 1126, 433, 188, 270
+	offsets: 0, 2, 188, 272
+hair_light_line_01
+	bounds: 200, 1869, 14, 113
+	offsets: 5, 5, 24, 123
+hair_light_line_02
+	bounds: 81, 1678, 71, 304
+	offsets: 4, 5, 79, 313
+hat_line
+	bounds: 1736, 47, 67, 208
+	offsets: 3, 7, 74, 219
+mouth_01
+	bounds: 130, 1794, 29, 27
+	offsets: 5, 4, 38, 36
+mouth_02
+	bounds: 1956, 1966, 8, 16
+	offsets: 5, 5, 18, 27
+mouth_03
+	bounds: 244, 1376, 38, 37
+	offsets: 4, 4, 46, 46
+mouth_04
+	bounds: 953, 1212, 70, 85
+	offsets: 5, 5, 80, 94
+mouth_05
+	bounds: 284, 1522, 48, 41
+	offsets: 5, 4, 58, 50
+mouth_06
+	bounds: 999, 1302, 33, 40
+	offsets: 4, 4, 41, 49
+mouth_07
+	bounds: 804, 1953, 37, 29
+	offsets: 5, 4, 46, 38
+mouth_08
+	bounds: 214, 1905, 62, 77
+	offsets: 5, 5, 73, 88
+mouth_09
+	bounds: 384, 1852, 61, 46
+	offsets: 4, 3, 69, 53
+mouth_10
+	bounds: 1216, 345, 68, 72
+	offsets: 5, 4, 78, 80
+mouth_11
+	bounds: 258, 1492, 51, 40
+	offsets: 5, 4, 60, 48
+mouth_12
+	bounds: 804, 1599, 37, 43
+	offsets: 4, 5, 46, 53
+mouth_13
+	bounds: 544, 1950, 39, 32
+	offsets: 4, 4, 48, 39
+mouth_14
+	bounds: 1943, 369, 69, 81
+	offsets: 5, 4, 79, 90
+mouth_15
+	bounds: 2, 1139, 61, 45
+	offsets: 4, 4, 69, 53
+mouth_16
+	bounds: 1155, 1473, 54, 75
+	offsets: 4, 5, 63, 85
+mouth_17
+	bounds: 339, 1829, 46, 33
+	offsets: 4, 5, 55, 42
+mouth_18
+	bounds: 1106, 612, 64, 62
+	offsets: 5, 5, 74, 71
+mouth_19
+	bounds: 1933, 1300, 43, 33
+	offsets: 5, 4, 52, 41
+out_hair_01
+	bounds: 2, 1532, 112, 450
+	offsets: 3, 3, 120, 457
+out_hair_02
+	bounds: 121, 1714, 56, 268
+	offsets: 4, 3, 64, 274
+out_hair_03
+	bounds: 529, 1926, 146, 56
+	offsets: 3, 5, 154, 66
+out_hair_04
+	bounds: 1623, 98, 92, 133
+	offsets: 5, 5, 102, 143
+	rotate: 90
+ring_01
+	bounds: 1674, 1385, 30, 36
+	offsets: 4, 5, 39, 46
+ring_02
+	bounds: 1972, 1709, 30, 34
+	offsets: 5, 4, 40, 43
+side_tail_Hair_01
+	bounds: 1282, 57, 77, 214
+	offsets: 4, 3, 85, 221
+	rotate: 90
+tophair_01
+	bounds: 1210, 399, 166, 538
+	offsets: 1, 2, 169, 541
+	rotate: 270
+tophair_02
+	bounds: 1809, 541, 237, 156
+	offsets: 2, 3, 241, 162
+
+CH0296_home_2.png
+	size: 2048, 2048
+	filter: Linear, Linear
+	scale: 0.7
+BG/Pillar
+	bounds: 1610, 63, 413, 428
+	offsets: 1, 0, 414, 428
+	rotate: 270
+BG/blossoms_01
+	bounds: 174, 185, 1649, 561
+	rotate: 180
+BG/blossoms_10
+	bounds: 2, 1813, 60, 59
+	offsets: 3, 4, 69, 64
+BG/blossoms_Bloom_01
+	bounds: 1330, 2, 638, 512
+	rotate: 180
+BG/blossoms_Bloom_02_01
+	bounds: 1674, 1627, 365, 252
+	rotate: 90
+BG/blossoms_Bloom_02_02
+	bounds: 939, 1490, 187, 137
+BG/blossoms_light_01_01
+	bounds: 2, 68, 619, 226
+BG/blossoms_light_01_02
+	bounds: 2, 1445, 52, 48
+	offsets: 3, 2, 59, 53
+BG/blossoms_light_02_01
+	bounds: 1001, 683, 299, 154
+	offsets: 3, 1, 302, 155
+BG/blossoms_light_02_02
+	bounds: 187, 1236, 113, 45
+	offsets: 4, 3, 120, 51
+BG/box_01
+	bounds: 2, 439, 582, 398
+BG/box_02
+	bounds: 1072, 1137, 909, 600
+	rotate: 270
+BG/doll
+	bounds: 639, 2, 390, 469
+	rotate: 90
+BG/doll_Bloom
+	bounds: 1674, 1401, 346, 230
+BG/doll_blossoms_1
+	bounds: 2, 1703, 40, 34
+	offsets: 4, 5, 48, 43
+BG/doll_blossoms_2
+	bounds: 2, 2009, 50, 37
+	offsets: 5, 3, 58, 43
+BG/doll_blossoms_3
+	bounds: 52, 1470, 39, 34
+	offsets: 4, 4, 48, 43
+BG/doll_light_1
+	bounds: 112, 1212, 91, 97
+	offsets: 3, 4, 97, 104
+BG/doll_light_2
+	bounds: 57, 1185, 55, 53
+	offsets: 4, 4, 63, 60
+BG/doll_light_3
+	bounds: 2, 1492, 61, 56
+	offsets: 4, 4, 69, 64
+BG/doll_light_4
+	bounds: 92, 1979, 81, 67
+	offsets: 6, 3, 91, 74
+BG/floor
+	bounds: 2, 839, 1216, 661
+	offsets: 0, 0, 1216, 904
+	rotate: 180
+BG/floor_Bloom_01
+	bounds: 2, 1289, 936, 757
+BG/floor_Bloom_02
+	bounds: 1219, 613, 662, 643
+	rotate: 90
+BG/floor_light_line_01
+	bounds: 568, 466, 431, 346
+BG/floor_light_line_02_1
+	bounds: 1649, 1065, 293, 257
+BG/grass_1
+	bounds: 2, 1211, 113, 106
+	offsets: 0, 5, 113, 111
+BG/grass_10
+	bounds: 75, 1904, 80, 65
+	offsets: 4, 4, 86, 69
+BG/grass_11
+	bounds: 939, 1743, 159, 257
+	offsets: 2, 2, 162, 260
+BG/grass_2
+	bounds: 1004, 196, 276, 230
+BG/grass_3
+	bounds: 297, 1258, 79, 47
+	offsets: 4, 6, 88, 56
+BG/grass_4
+	bounds: 939, 1621, 202, 186
+BG/grass_5
+	bounds: 1118, 1582, 52, 90
+	offsets: 4, 3, 60, 96
+BG/grass_6
+	bounds: 63, 1502, 40, 42
+	offsets: 4, 4, 47, 50
+BG/grass_7
+	bounds: 2, 1934, 133, 112
+	offsets: 1, 5, 137, 121
+BG/grass_8
+	bounds: 2, 1737, 40, 75
+	offsets: 4, 4, 48, 79
+BG/grass_9
+	bounds: 2, 1865, 83, 69
+	offsets: 3, 4, 90, 76

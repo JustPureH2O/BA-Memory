@@ -1,5 +1,6 @@
 import {Spine as SpineV4} from '@esotericsoftware/spine-pixi';
 import * as PIXI from 'pixi.js';
+import {CanvasArguments} from './constants.cjs';
 
 class Player {
     app;
@@ -70,6 +71,7 @@ class Player {
             export: false,
             lightFix: true,
             scale: 1.0,
+            mode: CanvasArguments.FILL,
         }
         if (options.get('export') !== null) this.options['export'] = true;
         if (options.get('fixed') !== null) this.options['fixed'] = true;
@@ -80,11 +82,15 @@ class Player {
         if (options.get('animation') !== null) this.options['animation'] = options.get('animation');
         if (options.get('noLightFix') !== null) this.options['lightFix'] = false;
         if (options.get('scale') !== null && options.get('scale') >= 0.0) this.options['scale'] = options.get('scale');
+        if (options.get('fill') !== null) this.options['mode'] = CanvasArguments.FILL;
+        if (options.get('fit') !== null) this.options['mode'] = CanvasArguments.FIT;
     }
 
     getCanvasArguments() {
         let ret = {scale: 1, scaleX: 1, scaleY: 1, x: 0, y: 0};
-        ret['scale'] = this.app.renderer.width / 3000 * this.options['scale'];
+        ret['scaleX'] = this.app.renderer.width / 3000 * this.options['scale'];
+        ret['scaleY'] = this.app.renderer.height / 1687.5 * this.options['scale'];
+        ret['scale'] = this.options['mode'] === CanvasArguments.FIT ? Math.min(ret['scaleX'], ret['scaleY']) : Math.max(ret['scaleX'], ret['scaleY']);
         ret['x'] = this.app.renderer.width / 2;
         ret['y'] = this.app.renderer.height;
         return ret;
