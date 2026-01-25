@@ -166,6 +166,7 @@ const CharacterTag = {
     NOA_PYJAMAS: {user: "noa_pyjamas", name: "CH0285", V4: true, cn: "生盐诺亚（睡衣）"}, // IMPL Implemented on 2024/12/24
     KOYUKI: {user: "koyuki", name: "CH0198", cn: "黑崎小雪"},
     RIO: {user: "rio", name: "CH0158", V4: true, cn: "调月莉音"}, // IMPL Implemented on 2025/01/27
+    RIO_ARMED: {user: "rio_armed", name: "CH0331", cn: "调月莉音（临战）"}, // IMPL Implemented on 2026/01/20
     // Veritas 真理部
     // AFFILIATION M_VERITAS
     CHIHIRO: {user: "chihiro", name: "CH0160", cn: "各务千寻"},
@@ -190,9 +191,11 @@ const CharacterTag = {
     AKANE_BUNNY: {user: "akane_bunny", name: "CH0099", cn: "室笠茜（兔女郎）"},
     TOKI: {user: "toki", name: "CH0187", cn: "飞鸟马时"},
     TOKI_BUNNY: {user: "toki_bunny", name: "CH0211", cn: "飞鸟马时（兔女郎）"},
+    TOKI_ARMED: {user: "toki_armed", name: "CH0333", cn: "飞鸟马时（临战）"}, // IMPL Implemented on 2026/01/20
     // Paranormal Affairs Department 灵异现象搜查部
     // AFFILIATION M_PARANORMAL
     HIMARI: {user: "himari", name: "CH0159", cn: "明星日鞠"},
+    HIMARI_ARMED: {user: "himari_armed", name: "CH0332", cn: "明星日鞠（临战）"}, // IMPL Implemented on 2026/01/20
     EIMI: {user: "eimi", name: "Eimi", cn: "和泉元艾米"},
     EIMI_SWIMSUIT: {user: "eimi_swimsuit", name: "CH0219", cn: "和泉元艾米"},
     // Engineering Department 工程部

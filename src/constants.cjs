@@ -177,6 +177,7 @@ const CharacterTag = {
     NOA_PYJAMAS: {user: "noa_pyjamas", name: "CH0285", V4: true}, // IMPL Implemented on 2024/12/24
     KOYUKI: {user: "koyuki", name: "CH0198"},
     RIO: {user: "rio", name: "CH0158", V4: true}, // IMPL Implemented on 2025/01/27
+    RIO_ARMED: {user: "rio_armed", name: "CH0331", V4: true}, // IMPL Implemented on 2026/01/20
     // Veritas 真理部
     // AFFILIATION M_VERITAS
     CHIHIRO: {user: "chihiro", name: "CH0160"},
@@ -201,9 +202,11 @@ const CharacterTag = {
     AKANE_BUNNY: {user: "akane_bunny", name: "CH0099"},
     TOKI: {user: "toki", name: "CH0187"},
     TOKI_BUNNY: {user: "toki_bunny", name: "CH0211"},
+    TOKI_ARMED: {user: "toki_armed", name: "CH0333", V4: true}, // IMPL Implemented on 2026/01/20
     // Paranormal Affairs Department 灵异现象搜查部
     // AFFILIATION M_PARANORMAL
     HIMARI: {user: "himari", name: "CH0159"},
+    HIMARI_ARMED: {user: "himari_armed", name: "CH0332", V4: true}, // IMPL Implemented on 2026/01/20
     EIMI: {user: "eimi", name: "Eimi"},
     EIMI_SWIMSUIT: {user: "eimi_swimsuit", name: "CH0219"},
     // Engineering Department 工程部
@@ -383,7 +386,8 @@ const CharacterTag = {
     SHOKUHOU_MISAKI: {user: "shokuhou_misaki", name: "CH9997"}, // 食蜂操祈和阿里乌斯的戒野美咲撞名了，故前者只能通过全名查询
     RUIKO: {user: "ruiko", name: "CH0996"},
     // --------------------- Others ----------------------- 其他角色
-    HOSHINO_MIDAUTUMN: {user: "hoshino_midautumn", name: "Hoshino_midautumn", format: 1, strict: true, PMA: true}
+    HOSHINO_MIDAUTUMN: {user: "hoshino_midautumn", name: "Hoshino_midautumn", format: 1, strict: true, PMA: true},
+    ROSMON: {user: "rosmontis", name: "rosmontis"},
 }
 
 function queryByName(name) {
