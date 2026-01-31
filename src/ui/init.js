@@ -219,6 +219,8 @@ const CharacterTag = {
     MOMOI_MAID: {user: "momoi_maid", name: "CH0201", cn: "才羽桃（女仆）"},
     ARIS: {user: "aris", name: "Aris", cn: "天童爱丽丝"},
     ARIS_MAID: {user: "aris_maid", name: "CH0200", cn: "天童爱丽丝（女仆）"},
+    ARIS_ARMED: {user: "aris_armed", name: "CH0334", cn: "天童爱丽丝（临战）"}, // IMPL Implemented on 2026/01/29
+    KEY: {user: "key", name: "CH0335", cn: "Key（凯伊）"}, // IMPL Implemented on 2026/01/29
     YUZU: {user: "yuzu", name: "Yuzu", cn: "花冈柚子"},
     YUZU_MAID: {user: "yuzu_maid", name: "CH0203", cn: "花冈柚子（女仆）"},
     // ------------------- Hyakkiyako -------------------- 百鬼夜行
