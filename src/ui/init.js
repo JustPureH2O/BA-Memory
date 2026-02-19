@@ -197,7 +197,8 @@ const CharacterTag = {
     HIMARI: {user: "himari", name: "CH0159", cn: "明星日鞠"},
     HIMARI_ARMED: {user: "himari_armed", name: "CH0332", cn: "明星日鞠（临战）"}, // IMPL Implemented on 2026/01/20
     EIMI: {user: "eimi", name: "Eimi", cn: "和泉元艾米"},
-    EIMI_SWIMSUIT: {user: "eimi_swimsuit", name: "CH0219", cn: "和泉元艾米"},
+    EIMI_SWIMSUIT: {user: "eimi_swimsuit", name: "CH0219", cn: "和泉元艾米（泳装）"},
+    EIMI_ARMED: {user: "eimi_armed", name: "CH0337", cn: "和泉元艾米（临战）"}, // IMPL Implemented on 2026/02/12
     // Engineering Department 工程部
     // AFFILIATION M_ENGINEERING
     UTAHA: {user: "utaha", name: "Utaha", cn: "白石歌原"},
@@ -223,6 +224,7 @@ const CharacterTag = {
     KEY: {user: "key", name: "CH0335", cn: "Key（凯伊）"}, // IMPL Implemented on 2026/01/29
     YUZU: {user: "yuzu", name: "Yuzu", cn: "花冈柚子"},
     YUZU_MAID: {user: "yuzu_maid", name: "CH0203", cn: "花冈柚子（女仆）"},
+    YUZU_ARMED: {user: "yuzu_armed", name: "CH0336", cn: "花冈柚子（临战）"}, // IMPL Implemented on 2026/02/12
     // ------------------- Hyakkiyako -------------------- 百鬼夜行
     // Yin-Yang Club 阴阳部
     // AFFILIATION H_YINYANG
