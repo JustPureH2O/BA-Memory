@@ -165,6 +165,7 @@ const CharacterTag = {
     NOA: {user: "noa", name: "CH0095", cn: "生盐诺亚"},
     NOA_PYJAMAS: {user: "noa_pyjamas", name: "CH0285", V4: true, cn: "生盐诺亚（睡衣）"}, // IMPL Implemented on 2024/12/24
     KOYUKI: {user: "koyuki", name: "CH0198", cn: "黑崎小雪"},
+    KOYUKI_PYJAMAS: {user: "koyuki_pyjamas", name: "CH0310", cn: "黑崎小雪（睡衣）"}, // IMPL Implemented on 2026/03/04
     RIO: {user: "rio", name: "CH0158", V4: true, cn: "调月莉音"}, // IMPL Implemented on 2025/01/27
     RIO_ARMED: {user: "rio_armed", name: "CH0331", cn: "调月莉音（临战）"}, // IMPL Implemented on 2026/01/20
     // Veritas 真理部
