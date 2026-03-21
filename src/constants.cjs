@@ -334,6 +334,7 @@ const CharacterTag = {
     // AFFILIATION V_PUBLICSECURITY
     KANNA: {user: "kanna", name: "CH0170"},
     KANNA_SWIMSUIT: {user: "kanna_swimsuit", name: "CH0260"},
+    KONOKA: {user: "konoka", name: "CH0264", V4: true}, // IMPL Implemented on 2026/03/18
     // Community Safety Bureau 生活安全局
     // AFFILIATION V_COMMUNITYSECURITY
     KIRINO: {user: "kirino", name: "Kirino"},
@@ -382,6 +383,9 @@ const CharacterTag = {
     MIYO: {user: "miyo", name: "CH0317", V4: true}, // IMPL Implemented on 2025/09/24
     FUYU: {user: "fuyu", name: "CH0318", V4: true}, // IMPL Implemented on 2025/09/24
     RITSU: {user: "ritsu", name: "CH0319", V4: true}, // IMPL Implemented on 2025/10/08
+    // Room 404, Dormitory N4 第四宿舍404室
+    // AFFILIATION W_DORM404
+    RENA: {user: "rena", name: "CH0305", V4: true}, // IMPL Implemented on 2026/03/18
     // ------------ Somewhere Outside Kivotos ------------ 联动角色
     // VOCALOID V家
     // AFFILIATION VOCALOID

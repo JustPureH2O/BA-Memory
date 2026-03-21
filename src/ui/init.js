@@ -320,6 +320,7 @@ const CharacterTag = {
     // AFFILIATION V_PUBLICSECURITY
     KANNA: {user: "kanna", name: "CH0170", cn: "尾刃叶渚"},
     KANNA_SWIMSUIT: {user: "kanna_swimsuit", name: "CH0260", cn: "尾刃叶渚（泳装）"},
+    KONOKA: {user: "konoka", name: "CH0264", cn: "志真心华"}, // IMPL Implemented on 2026/03/18
     // Community Safety Bureau 生活安全局
     // AFFILIATION V_COMMUNITYSAFETY
     KIRINO: {user: "kirino", name: "kirino", cn: "中务桐乃"},
@@ -364,9 +365,13 @@ const CharacterTag = {
     ERI: {user: "eri", name: "CH0304", V4: true, cn: "白尾艾利"}, // IMPL Implemented on 2025/08/22
     KANOE: {user: "kanoe", name: "CH0306", V4: true, cn: "板垣庚"}, // IMPL Implemented on 2025/08/22
     // Free Trade Cartel 特殊交易部
+    // AFFILIATION W_TRADE
     MIYO: {user: "miyo", name: "CH0317", V4: true, cn: "樱井美代"}, // IMPL Implemented on 2025/09/24
     FUYU: {user: "fuyu", name: "CH0318", V4: true, cn: "若狭冬"}, // IMPL Implemented on 2025/09/24
     RITSU: {user: "ritsu", name: "CH0319", V4: true, cn: "薄叶律"}, // IMPL Implemented on 2025/10/08
+    // Room 404, Dormitory N4 第四宿舍404室
+    // AFFILIATION W_DORM404
+    RENA: {user: "rena", name: "CH0305", cn: "衣裴莱娜"}, // IMPL Implemented on 2026/03/18
     // ------------ Somewhere Outside Kivotos ------------ 联动角色
     // VOCALOID V家
     // AFFILIATION VOCALOID
