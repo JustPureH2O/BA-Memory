@@ -3,6 +3,11 @@ const CanvasArguments = {
     FIT: "FIT"
 };
 
+const LoaderType = {
+    LEGACY: 0,
+    SPINEV4: 1,
+};
+
 const CharacterTag = {
     // -------------- Abydos ---------------- 阿拜多斯
     // Countermeasures Committee 对策委员会
@@ -11,21 +16,21 @@ const CharacterTag = {
     SHIROKO_SWIMSUIT: {user: "shiroko_swimsuit", name: "CH0188"},
     SHIROKO_RIDINGSUIT: {user: "shiroko_ridingsuit", name: "Shiroko_ridingsuit"},
     SHIROKO_TERROR: {user: "shiroko_terror", name: "CH0263"},
-    SHIROKO_BD: {user: "shiroko_bd", name: "LobbyShiroko_multi", strict: true, V4: true},
+    SHIROKO_BD: {user: "shiroko_bd", name: "LobbyShiroko_multi", strict: true, loader: LoaderType.SPINEV4},
     HOSHINO: {user: "hoshino", name: "Hoshino"},
     HOSHINO_SWIMSUIT: {user: "hoshino_swimsuit", name: "Hoshino_swimsuit"},
     HOSHINO_ARMED: {user: "hoshino_armed", name: "CH0258"},
-    HOSHINO_BD: {user: "hoshino_bd", name: "LobbyHoshino_multi", strict: true, V4: true},
+    HOSHINO_BD: {user: "hoshino_bd", name: "LobbyHoshino_multi", strict: true, loader: LoaderType.SPINEV4},
     NONOMI: {user: "nonomi", name: "Nonomi"},
     NONOMI_SWIMSUIT: {user: "nonomi_swimsuit", name: "CH0092"},
-    NONOMI_BD: {user: "nonomi_bd", name: "LobbyNonomi_multi", strict: true, V4: true},
+    NONOMI_BD: {user: "nonomi_bd", name: "LobbyNonomi_multi", strict: true, loader: LoaderType.SPINEV4},
     AYANE: {user: "ayane", name: "Ayane"},
     AYANE_SWIMSUIT: {user: "ayane_swimsuit", name: "CH0176"},
-    AYANE_BD: {user: "ayane_bd", name: "LobbyAyane_multi", strict: true, V4: true},
+    AYANE_BD: {user: "ayane_bd", name: "LobbyAyane_multi", strict: true, loader: LoaderType.SPINEV4},
     SERIKA: {user: "serika", name: "Serika"},
     SERIKA_NEWYEAR: {user: "serika_newyear", name: "Serika_Newyear"},
     SERIKA_SWIMSUIT: {user: "serika_swimsuit", name: "CH0189"},
-    SERIKA_BD: {user: "serika_bd", name: "LobbySerika_multi", strict: true, V4: true},
+    SERIKA_BD: {user: "serika_bd", name: "LobbySerika_multi", strict: true, loader: LoaderType.SPINEV4},
     // -------------- Gehenna ---------------- 格赫娜
     // Handyman 68 便利店68
     // AFFILIATION G_HANDYMAN68
@@ -44,7 +49,7 @@ const CharacterTag = {
     FUUKA: {user: "fuuka", name: "Fuuka"},
     FUUKA_NEWYEAR: {user: "fuuka_newyear", name: "CH0177"},
     JURI: {user: "juri", name: "Juri"},
-    JURI_PART_TIMER: {user: "juri_part_timer", name: "CH0286", V4: true}, // IMPL Implemented on 2025/02/26
+    JURI_PART_TIMER: {user: "juri_part_timer", name: "CH0286", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/02/26
     // Gourmet Research Society 美食研究会
     // AFFILIATION G_GOURMET
     // 官方图册上写的是 Akashi Junko，但是模型扒下来就是 Zunko，为了消除歧义故两种标识符都添加在此
@@ -57,7 +62,7 @@ const CharacterTag = {
     HARUNA_GYM: {user: "haruna_gym", name: "CH0193"},
     IZUMI: {user: "izumi", name: "Izumi"},
     IZUMI_SWIMSUIT: {user: "izumi_swimsuit", name: "Izumi_swimsuit"},
-    IZUMI_NEWYEAR: {user: "izumi_newyear", name: "CH0197", V4: true}, // IMPL Implemented on 2025/03/19
+    IZUMI_NEWYEAR: {user: "izumi_newyear", name: "CH0197", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/03/19
     AKARI: {user: "akari", name: "akari"},
     AKARI_BG: {user: "akari_bg", name: "akari_bg", strict: true},
     AKARI_SCENE: {user: "akari_scene", name: "akari_scene", strict: true}, // TODO Deprecate this
@@ -78,8 +83,8 @@ const CharacterTag = {
     MAKOTO: {user: "makoto", name: "CH0079"},
     IROHA: {user: "iroha", name: "CH0156"},
     IBUKI: {user: "ibuki", name: "Ibuki"},
-    CHIAKI: {user: "chiaki", name: "CH0238", V4: true}, // IMPL Implemented on 2024/11/20
-    SATSUKI: {user: "satsuki", name: "CH0080", V4: true}, // IMPL Implemented on 2024/11/20
+    CHIAKI: {user: "chiaki", name: "CH0238", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2024/11/20
+    SATSUKI: {user: "satsuki", name: "CH0080", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2024/11/20
     // Hot Spring Development Department 温泉开发部
     // AFFILIATION G_HOTSPRING
     KASUMI: {user: "kasumi", name: "CH0089"},
@@ -87,7 +92,7 @@ const CharacterTag = {
     // Emergency Medicine Club 救急医学部
     // AFFILIATION G_MEDICINE
     SENA: {user: "sena", name: "CH0081"},
-    SENA_CASUAL: {user: "sena_casual", name: "CH0082", V4: true}, // IMPL Implemented on 2025/02/26
+    SENA_CASUAL: {user: "sena_casual", name: "CH0082", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/02/26
     // Sparkle Club 亮闪闪部
     // AFFILIATION G_SPARKLE
     KIRARA: {user: "kirara", name: "Kirara"},
@@ -95,36 +100,36 @@ const CharacterTag = {
     // Tea Party 茶话会
     // AFFILIATION T_TEAPARTY
     MIKA: {user: "mika", name: "CH0069"},
-    MIKA_SWIMSUIT: {user: "mika_swimsuit", name: "CH0294", V4: true}, // IMPL Implemented on 2025/07/30
+    MIKA_SWIMSUIT: {user: "mika_swimsuit", name: "CH0294", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/07/30
     NAGISA: {user: "nagisa", name: "Nagisa"},
-    NAGISA_SWIMSUIT: {user: "nagisa_swimsuit", name: "CH0293", V4: true}, // IMPL Implemented on 2025/07/30
-    SEIA: {user: "seia", name: "CH0070", V4: true}, // IMPL implemented on 2025/01/20
-    SEIA_SWIMSUIT: {user: "seia_swimsuit", name: "CH0295", V4: true}, // IMPL Implemented on 2025/07/22
+    NAGISA_SWIMSUIT: {user: "nagisa_swimsuit", name: "CH0293", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/07/30
+    SEIA: {user: "seia", name: "CH0070", loader: LoaderType.SPINEV4}, // IMPL implemented on 2025/01/20
+    SEIA_SWIMSUIT: {user: "seia_swimsuit", name: "CH0295", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/07/22
     // Sisterhood 姐妹会
     // AFFILIATION T_SISTERHOOD
     SAKURAKO: {user: "sakurako", name: "Sakurako"},
-    SAKURAKO_IDOL: {user: "sakurako_idol", name: "CH0274", V4: true}, // IMPL implemented on 2024/10/23
+    SAKURAKO_IDOL: {user: "sakurako_idol", name: "CH0274", loader: LoaderType.SPINEV4}, // IMPL implemented on 2024/10/23
     MARI: {user: "mari", name: "mari"},
     MARI_GYM: {user: "mari_gym", name: "CH0186"},
-    MARI_IDOL: {user: "mari_idol", name: "CH0273", V4: true}, // IMPL implemented on 2024/10/23
+    MARI_IDOL: {user: "mari_idol", name: "CH0273", loader: LoaderType.SPINEV4}, // IMPL implemented on 2024/10/23
     HINATA: {user: "hinata", name: "Hinata"},
     HINATA_SWIMSUIT: {user: "hinata_swimsuit", name: "CH0210"},
     // Justice Realization Committee 正义实现委员会
     // AFFILIATION T_JUSTICE
     // 小春划在了补习部下
     TSURUGI: {user: "tsurugi", name: "Tsurugi"},
-    TSURUGI_SWIMSUIT: {user: "tsurugi_swimsuit", name: "CH0060", V4: true},
+    TSURUGI_SWIMSUIT: {user: "tsurugi_swimsuit", name: "CH0060", loader: LoaderType.SPINEV4},
     HASUMI: {user: "hasumi", name: "Hasumi"},
     HASUMI_GYM: {user: "hasumi_gym", name: "CH0190"},
-    HASUMI_SWIMSUIT: {user: "hasumi_swimsuit", name: "CH0291", V4: true}, // IMPL Implemented on 2025/07/22
+    HASUMI_SWIMSUIT: {user: "hasumi_swimsuit", name: "CH0291", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/07/22
     MASHIRO: {user: "mashiro", name: "Mashiro"},
     MASHIRO_SWIMSUIT: {user: "mashiro_swimsuit", name: "Mashiro_swimsuit"},
     ICHIKA: {user: "ichika", name: "CH0071"},
-    ICHIKA_SWIMSUIT: {user: "ichika_swimsuit", name: "CH0292", V4: true}, // IMPL Implemented on 2025/07/22
+    ICHIKA_SWIMSUIT: {user: "ichika_swimsuit", name: "CH0292", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/07/22
     // Knights Hospitaller 救援骑士团
     // AFFILIATION T_HOSPITALLER
     MINE: {user: "mine", name: "CH0152"},
-    MINE_IDOL: {user: "mine_idol", name: "CH0275", V4: true}, // IMPL implemented on 2024/10/23
+    MINE_IDOL: {user: "mine_idol", name: "CH0275", loader: LoaderType.SPINEV4}, // IMPL implemented on 2024/10/23
     HANAE: {user: "hanae", name: "Hanae"},
     HANAE_CHRISTMAS: {user: "hanae_christmas", name: "CH0195"},
     SERINA: {user: "serina", name: "serina"},
@@ -139,7 +144,7 @@ const CharacterTag = {
     KAZUSA: {user: "kazusa", name: "kazusa"},
     KAZUSA_BAND: {user: "kazusa_band", name: "CH0250"},
     NATSU: {user: "natsu", name: "CH0155"},
-    NATSU_BAND: {user: "natsu_band", name: "CH0221", V4: true}, // IMPL Implemented on 2025/06/04
+    NATSU_BAND: {user: "natsu_band", name: "CH0221", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/06/04
     AIRI: {user: "airi", name: "Airi"},
     AIRI_BAND: {user: "airi_band", name: "CH0251"},
     YOSHIMI: {user: "yoshimi", name: "Yoshimi"},
@@ -147,9 +152,9 @@ const CharacterTag = {
     // Trinity Vigilante Crew 圣三一自警团
     // AFFILIATION T_VIGILANTE
     REISA: {user: "reisa", name: "CH0167"},
-    REISA_MAGICAL: {user: "reisa_magical", name: "CH0326", V4: true}, // IMPL Implemented on 2025/10/22
+    REISA_MAGICAL: {user: "reisa_magical", name: "CH0326", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/10/22
     SUZUMI: {user: "suzumi", name: "Suzumi"},
-    SUZUMI_MAGICAL: {user: "suzumi_magical", name: "CH0325", V4: true}, // IMPL Implemented on 2025/10/22
+    SUZUMI_MAGICAL: {user: "suzumi_magical", name: "CH0325", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/10/22
     // Supplementary Lessons Department 补习部
     // AFFILIATION T_SUPPLEMENTARY
     KOHARU: {user: "koharu", name: "Koharu"},
@@ -165,25 +170,25 @@ const CharacterTag = {
     HANAKO_SWIMSUIT: {user: "hanako_swimsuit", name: "CH0209"},
     // Helmet Gang 头盔团
     // AFFILIATION T_HELMETGANG
-    RABU: {user: "rabu", name: "CH0166", V4: true}, // IMPL Implemented on 2025/10/22
+    RABU: {user: "rabu", name: "CH0166", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/10/22
     // ------------- Millennium Science School --------------- 千年科学学院
     // Seminar 研讨会
     // AFFILIATION M_SEMINAR
     YUUKA: {user: "yuuka", name: "Yuuka"},
     YUUKA_GYM: {user: "yuuka_gym", name: "CH0184"},
     YUUKA_GYM_00: {user: "yuuka_gym_00", name: "CH0184_00", strict: true},
-    YUUKA_PYJAMAS: {user: "yuuka_pyjamas", name: "CH0284", V4: true}, // IMPL Implemented on 2024/12/24
+    YUUKA_PYJAMAS: {user: "yuuka_pyjamas", name: "CH0284", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2024/12/24
     NOA: {user: "noa", name: "CH0095"},
-    NOA_PYJAMAS: {user: "noa_pyjamas", name: "CH0285", V4: true}, // IMPL Implemented on 2024/12/24
+    NOA_PYJAMAS: {user: "noa_pyjamas", name: "CH0285", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2024/12/24
     KOYUKI: {user: "koyuki", name: "CH0198"},
-    KOYUKI_PYJAMAS: {user: "koyuki_pyjamas", name: "CH0310", V4: true}, // IMPL Implemented on 2026/03/04
-    RIO: {user: "rio", name: "CH0158", V4: true}, // IMPL Implemented on 2025/01/27
-    RIO_ARMED: {user: "rio_armed", name: "CH0331", V4: true}, // IMPL Implemented on 2026/01/20
+    KOYUKI_PYJAMAS: {user: "koyuki_pyjamas", name: "CH0310", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/03/04
+    RIO: {user: "rio", name: "CH0158", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/01/27
+    RIO_ARMED: {user: "rio_armed", name: "CH0331", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/01/20
     // Veritas 真理部
     // AFFILIATION M_VERITAS
     CHIHIRO: {user: "chihiro", name: "CH0160"},
     MAKI: {user: "maki", name: "Maki"},
-    MAKI_CAMP: {user: "maki_camp", name: "CH0235", V4: true}, // IMPL Implemented on 2025/02/12
+    MAKI_CAMP: {user: "maki_camp", name: "CH0235", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/02/12
     HARE: {user: "hare", name: "Hare"},
     HARE_CAMP: {user: "hare_camp", name: "CH0233"},
     KOTAMA: {user: "kotama", name: "Kotama"},
@@ -192,25 +197,26 @@ const CharacterTag = {
     // AFFILIATION M_CC
     NERU: {user: "neru", name: "Neru"},
     NERU_BUNNY: {user: "neru_bunny", name: "CH0101"},
-    NERU_UNIFORM: {user: "neru_uniform", name: "CH0280", V4: true}, // IMPL Implemented on 2025/01/27
+    NERU_UNIFORM: {user: "neru_uniform", name: "CH0280", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/01/27
     ASUNA: {user: "asuna", name: "Asuna"},
     ASUNA_BUNNY: {user: "asuna_bunny", name: "CH0098"},
-    ASUNA_UNIFORM: {user: "asuna_uniform", name: "CH0281", V4: true}, // IMPL Implemented on 2025/01/20
+    ASUNA_UNIFORM: {user: "asuna_uniform", name: "CH0281", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/01/20
     KARIN: {user: "karin", name: "Karin"},
     KARIN_BUNNY: {user: "karin_bunny", name: "CH0100"},
-    KARIN_UNIFORM: {user: "karin_uniform", name: "CH0282", V4: true}, // IMPL Implemented on 2025/01/20
+    KARIN_UNIFORM: {user: "karin_uniform", name: "CH0282", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/01/20
     AKANE: {user: "akane", name: "Akane"},
     AKANE_BUNNY: {user: "akane_bunny", name: "CH0099"},
+    AKANE_UNIFORM: {user: "akane_uniform", name: "CH0307", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/04/01
     TOKI: {user: "toki", name: "CH0187"},
     TOKI_BUNNY: {user: "toki_bunny", name: "CH0211"},
-    TOKI_ARMED: {user: "toki_armed", name: "CH0333", V4: true}, // IMPL Implemented on 2026/01/20
+    TOKI_ARMED: {user: "toki_armed", name: "CH0333", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/01/20
     // Paranormal Affairs Department 灵异现象搜查部
     // AFFILIATION M_PARANORMAL
     HIMARI: {user: "himari", name: "CH0159"},
-    HIMARI_ARMED: {user: "himari_armed", name: "CH0332", V4: true}, // IMPL Implemented on 2026/01/20
+    HIMARI_ARMED: {user: "himari_armed", name: "CH0332", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/01/20
     EIMI: {user: "eimi", name: "Eimi"},
     EIMI_SWIMSUIT: {user: "eimi_swimsuit", name: "CH0219"},
-    EIMI_ARMED: {user: "eimi_armed", name: "CH0337", V4: true}, // IMPL Implemented on 2026/02/12
+    EIMI_ARMED: {user: "eimi_armed", name: "CH0337", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/02/12
     // Engineering Department 工程部
     // AFFILIATION M_ENGINEERING
     UTAHA: {user: "utaha", name: "Utaha"},
@@ -222,8 +228,8 @@ const CharacterTag = {
     // Gym Training Department 体育锻炼部
     // AFFILIATION M_GYM
     SUMIRE: {user: "sumire", name: "Sumire"},
-    SUMIRE_PART_TIMER: {user: "sumire_part_timer", name: "CH0287", V4: true}, // IMPL Implemented on 2025/03/26
-    REI: {user: "rei", name: "CH0245", V4: true}, // IMPL Implemented on 2025/03/26
+    SUMIRE_PART_TIMER: {user: "sumire_part_timer", name: "CH0287", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/03/26
+    REI: {user: "rei", name: "CH0245", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/03/26
     // Game Development Department 游戏开发部
     // AFFILIATION M_GAME
     MIDORI: {user: "midori", name: "Midori"},
@@ -232,34 +238,34 @@ const CharacterTag = {
     MOMOI_MAID: {user: "momoi_maid", name: "CH0201"},
     ARIS: {user: "aris", name: "Aris"},
     ARIS_MAID: {user: "aris_maid", name: "CH0200"},
-    ARIS_ARMED: {user: "aris_armed", name: "CH0334", V4: true}, // IMPL Implemented on 2026/01/29
-    KEY: {user: "key", name: "CH0335", V4: true}, // IMPL Implemented on 2026/01/29
-    KEI: {user: "kei", name: "CH0335", V4: true},
+    ARIS_ARMED: {user: "aris_armed", name: "CH0334", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/01/29
+    KEY: {user: "key", name: "CH0335", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/01/29
+    KEI: {user: "kei", name: "CH0335", loader: LoaderType.SPINEV4},
     YUZU: {user: "yuzu", name: "Yuzu"},
     YUZU_MAID: {user: "yuzu_maid", name: "CH0203"},
-    YUZU_ARMED: {user: "yuzu_armed", name: "CH0336", V4: true}, // IMPL Implemented on 2026/02/12
+    YUZU_ARMED: {user: "yuzu_armed", name: "CH0336", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/02/12
     // ------------------- Hyakkiyako -------------------- 百鬼夜行
     // Yin-Yang Club 阴阳部
     // AFFILIATION H_YINYANG
     KAHO: {user: "kaho", name: "CH0107"},
     CHISE: {user: "chise", name: "Chise"},
     CHISE_SWIMSUIT: {user: "chise_swimsuit", name: "CH0178"},
-    NIYA: {user: "niya", name: "CH0109", V4: true}, // IMPL Implemented on 2025/05/21
+    NIYA: {user: "niya", name: "CH0109", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/05/21
     // Hyakkaryouran Conflict Resolution Council 百花缭乱调停委员会
     // AFFILIATION H_CONFLICT
     RENGE: {user: "renge", name: "CH0224"},
-    RENGE_SWIMSUIT: {user: "renge_swimsuit", name: "CH0302", V4: true}, // IMPL Implemented on 2025/06/25
+    RENGE_SWIMSUIT: {user: "renge_swimsuit", name: "CH0302", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/06/25
     KIKYOU: {user: "kikyou", name: "CH0225"},
-    KIKYOU_SWIMSUIT: {user: "kikyou_swimsuit", name: "CH0300", V4: true}, // IMPL Implemented on 2025/06/25
+    KIKYOU_SWIMSUIT: {user: "kikyou_swimsuit", name: "CH0300", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/06/25
     YUKARI: {user: "yukari", name: "CH0161"},
-    YUKARI_SWIMSUIT: {user: "yukari_swimsuit", name: "CH0301", V4: true}, // IMPL Implemented on 2025/06/25
-    NAGUSA: {user: "nagusa", name: "CH0222", V4: true}, // IMPL Implemented on 2025/05/21
+    YUKARI_SWIMSUIT: {user: "yukari_swimsuit", name: "CH0301", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/06/25
+    NAGUSA: {user: "nagusa", name: "CH0222", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/05/21
     // Festival Management Committee 节庆营运管理部
     // AFFILIATION H_FESTIVAL
     SHIZUKO: {user: "shizuko", name: "Shizuko"},
     SHIZUKO_SWIMSUIT: {user: "shizuko_swimsuit", name: "CH0180"},
     PINA: {user: "pina", name: "Pina"},
-    PINA_GUIDE: {user: "pina_guide", name: "CH0257", V4: true}, // IMPL Implemented on 2025/05/14
+    PINA_GUIDE: {user: "pina_guide", name: "CH0257", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/05/14
     UMIKA: {user: "umika", name: "CH0110"},
     // Etiquette Training Society 修行部
     // AFFILIATION H_ETIQUETTE
@@ -271,11 +277,11 @@ const CharacterTag = {
     // Ninjutsu Research Department 忍术研究部
     // AFFILIATION H_NINJUTSU
     MICHIRU: {user: "michiru", name: "CH0113"},
-    MICHIRU_DRESS: {user: "michiru_dress", name: "CH0296", V4: true}, // IMPL Implemented on 2025/12/24
+    MICHIRU_DRESS: {user: "michiru_dress", name: "CH0296", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/12/24
     IZUNA: {user: "izuna", name: "Izuna"},
     IZUNA_SWIMSUIT: {user: "izuna_swimsuit", name: "CH0179"},
     TSUKUYO: {user: "tsukuyo", name: "CH0114"},
-    TSUKUYO_DRESS: {user: "tsukuyo_dress", name: "CH0297", V4: true}, // IMPL Implemented on 2025/12/24
+    TSUKUYO_DRESS: {user: "tsukuyo_dress", name: "CH0297", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/12/24
     // Seven Prisoners 七囚人
     // AFFILIATION H_PRISONERS
     WAKAMO: {user: "wakamo", name: "Wakamo"},
@@ -327,14 +333,14 @@ const CharacterTag = {
     SHIGURE_HOTSPRING: {user: "shigure_hotspring", name: "CH0123"},
     // Publishing Department 出版部
     // AFFILIATION R_PUBLISHING
-    YAKUMO: {user: "yakumo", name: "CH0228", V4: true}, // IMPL Implemented on 2025/11/19
-    TAKANE: {user: "takane", name: "CH0229", V4: true}, // IMPL Implemented on 2025/11/19
+    YAKUMO: {user: "yakumo", name: "CH0228", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/11/19
+    TAKANE: {user: "takane", name: "CH0229", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/11/19
     // --------------------- Valkyrie --------------------- 瓦尔基里
     // Public Security Bureau 公安局
     // AFFILIATION V_PUBLICSECURITY
     KANNA: {user: "kanna", name: "CH0170"},
     KANNA_SWIMSUIT: {user: "kanna_swimsuit", name: "CH0260"},
-    KONOKA: {user: "konoka", name: "CH0264", V4: true}, // IMPL Implemented on 2026/03/18
+    KONOKA: {user: "konoka", name: "CH0264", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/03/18
     // Community Safety Bureau 生活安全局
     // AFFILIATION V_COMMUNITYSECURITY
     KIRINO: {user: "kirino", name: "Kirino"},
@@ -348,12 +354,12 @@ const CharacterTag = {
     ATSUKO_SWIMSUIT: {user: "atsuko_swimsuit", name: "CH0267"},
     SAORI: {user: "saori", name: "Saori"},
     SAORI_SWIMSUIT: {user: "saori_swimsuit", name: "CH0266"},
-    SAORI_DRESS: {user: "saori_dress", name: "CH0259", V4: true}, // IMPL Implemented on 2025/04/09
+    SAORI_DRESS: {user: "saori_dress", name: "CH0259", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/04/09
     HIYORI: {user: "hiyori", name: "Hiyori"},
     HIYORI_SWIMSUIT: {user: "hiyori_swimsuit", name: "CH0269"},
     MISAKI: {user: "misaki", name: "Misaki"},
-    MISAKI_SWIMSUIT: {user: "misaki_swimsuit", name: "CH0268", V4: true}, // IMPL Implemented on 2025/09/03
-    SUBARU: {user: "subaru", name: "CH0309", V4: true}, // IMPL Implemented on 2025/11/12
+    MISAKI_SWIMSUIT: {user: "misaki_swimsuit", name: "CH0268", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/09/03
+    SUBARU: {user: "subaru", name: "CH0309", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/11/12
     // ----------------------- SRT -------------------------
     // RABBIT Platoon RABBIT小队
     // AFFILIATION SRT_RABBIT
@@ -368,24 +374,24 @@ const CharacterTag = {
     // -------------------- Highlander ---------------------- 海兰德
     // Central Control Center 中央管制中心
     // AFFILIATION HI_CCC
-    HIKARI: {user: "hikari", name: "CH0242", V4: true}, // IMPL implemented on 2025/04/22
-    NOZOMI: {user: "nozomi", name: "CH0243", V4: true}, // IMPL implemented on 2025/04/22
+    HIKARI: {user: "hikari", name: "CH0242", loader: LoaderType.SPINEV4}, // IMPL implemented on 2025/04/22
+    NOZOMI: {user: "nozomi", name: "CH0243", loader: LoaderType.SPINEV4}, // IMPL implemented on 2025/04/22
     // Freight Transport Management Department 货物输送管理部
     // AFFILIATION HI_FREIGHT
-    AOBA: {user: "aoba", name: "CH0288", V4: true}, // IMPL implemented on 2025/04/22
+    AOBA: {user: "aoba", name: "CH0288", loader: LoaderType.SPINEV4}, // IMPL implemented on 2025/04/22
     // ------------- Wild Hunt Academy of Arts -------------- 狂猎艺术学会
     // Occult Research Society 神秘学研究会
     // AFFILIATION W_OCCULT
-    ERI: {user: "eri", name: "CH0304", V4: true}, // IMPL Implemented on 2025/08/22
-    KANOE: {user: "kanoe", name: "CH0306", V4: true}, // IMPL Implemented on 2025/08/22
+    ERI: {user: "eri", name: "CH0304", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/08/22
+    KANOE: {user: "kanoe", name: "CH0306", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/08/22
     // Free Trade Cartel 特殊交易部
     // AFFILIATION W_TRADE
-    MIYO: {user: "miyo", name: "CH0317", V4: true}, // IMPL Implemented on 2025/09/24
-    FUYU: {user: "fuyu", name: "CH0318", V4: true}, // IMPL Implemented on 2025/09/24
-    RITSU: {user: "ritsu", name: "CH0319", V4: true}, // IMPL Implemented on 2025/10/08
+    MIYO: {user: "miyo", name: "CH0317", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/09/24
+    FUYU: {user: "fuyu", name: "CH0318", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/09/24
+    RITSU: {user: "ritsu", name: "CH0319", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/10/08
     // Room 404, Dormitory N4 第四宿舍404室
     // AFFILIATION W_DORM404
-    RENA: {user: "rena", name: "CH0305", V4: true}, // IMPL Implemented on 2026/03/18
+    RENA: {user: "rena", name: "CH0305", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/03/18
     // ------------ Somewhere Outside Kivotos ------------ 联动角色
     // VOCALOID V家
     // AFFILIATION VOCALOID
@@ -415,5 +421,6 @@ function queryByName(name) {
 export {
     CharacterTag,
     queryByName,
-    CanvasArguments
+    CanvasArguments,
+    LoaderType,
 }

@@ -1,4 +1,5 @@
 import * as Query from "./constants.cjs";
+import {LoaderType} from "./constants.cjs";
 
 const param = new URLSearchParams(window.location.search);
 
@@ -10,7 +11,7 @@ let src = './assets/Azusa_home/Azusa_home';
 let ret = Query.queryByName(param.get('name'));
 if (ret && ret[0] !== undefined) src = ret[0];
 let Canvas;
-if (ret && ret[1]['V4'] === true) {
+if (ret && ret[1]['loader'] === LoaderType.SPINEV4) {
     import("./player.cjs").then(Player => {
         Canvas = new Player.Player(param, src, ret[1]['format'] ? '.json' : '.skel', ret[1]['injectPlayerSettings']);
         Canvas.play().then((res) => {window.postMessage(JSON.stringify(res, null, 4), '*')});
