@@ -352,6 +352,10 @@ const CharacterTag = {
     SAKI_SWIMSUIT: {user: "saki_swimsuit", name: "CH0217", cn: "空井咲（泳装）"},
     MOE: {user: "moe", name: "Moe", cn: "风仓萌"},
     MOE_SWIMSUIT: {user: "moe_swimsuit", name: "CH0216", cn: "风仓萌（泳装）"},
+    // FOX Platoon FOX小队
+    NIKO: {user: "niko", name: "CH0172", cn: "吉野妮可"}, // IMPL Implemented on 2026/04/21
+    KURUMI: {user: "kurumi", name: "CH0173", cn: "高仓胡桃"}, // IMPL Implemented on 2026/04/21
+    OTOGI: {user: "otogi", name: "C0174", cn: "天神山音葵"}, // IMPL Implemented on 2026/04/21
     // -------------------- Highlander ---------------------- 海兰德
     // Central Control Center 中央管制中心
     // AFFILIATION HI_CCC
