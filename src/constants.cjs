@@ -96,6 +96,7 @@ const CharacterTag = {
     // Sparkle Club 亮闪闪部
     // AFFILIATION G_SPARKLE
     KIRARA: {user: "kirara", name: "Kirara"},
+    ERIKA: {user: "erika", name: "erika", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/05/20
     // --------------- Trinity ----------------- 圣三一
     // Tea Party 茶话会
     // AFFILIATION T_TEAPARTY
