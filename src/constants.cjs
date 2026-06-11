@@ -42,8 +42,10 @@ const CharacterTag = {
     KAYOKO_DRESS: {user: "kayoko_dress", name: "CH0239"},
     MUTSUKI: {user: "mutsuki", name: "Mutsuki"},
     MUTSUKI_NEWYEAR: {user: "mutsuki_newyear", name: "mutsuki_newyear"},
+    MUTSUKI_DRESS: {user: "mutsuki_dress", name: "CH0246", loader: LoaderType.SPINEV4}, // IMPL Implemeted on 2026/05/27
     HARUKA: {user: "haruka", name: "Haruka"},
     HARUKA_NEWYEAR: {user: "haruka_newyear", name: "CH0087"},
+    HARUKA_DRESS: {user: "haruka_dress", name: "CH0247", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/05/27
     // School Lunch Club 供给部
     // AFFILIATION G_LUNCH
     FUUKA: {user: "fuuka", name: "Fuuka"},
@@ -261,6 +263,7 @@ const CharacterTag = {
     YUKARI: {user: "yukari", name: "CH0161"},
     YUKARI_SWIMSUIT: {user: "yukari_swimsuit", name: "CH0301", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/06/25
     NAGUSA: {user: "nagusa", name: "CH0222", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/05/21
+    NAGUSA_SWIMSUIT: {user: "nagusa_swimsuit", name: "CH0303", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/06/10
     // Festival Management Committee 节庆营运管理部
     // AFFILIATION H_FESTIVAL
     SHIZUKO: {user: "shizuko", name: "Shizuko"},

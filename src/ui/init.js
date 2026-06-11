@@ -32,8 +32,10 @@ const CharacterTag = {
     KAYOKO_DRESS: {user: "kayoko_dress", name: "CH0239", cn: "鬼方佳代子（礼服）"},
     MUTSUKI: {user: "mutsuki", name: "Mutsuki", cn: "浅黄睦月"},
     MUTSUKI_NEWYEAR: {user: "mutsuki_newyear", name: "mutsuki_newyear", cn: "浅黄睦月（正月）"},
+    MUTSUKI_DRESS: {user: "mutsuki_dress", name: "CH0246", cn: "浅黄睦月（礼服）"}, // IMPL Implemented on 2026/05/27
     HARUKA: {user: "haruka", name: "Haruka", cn: "伊草春香"},
     HARUKA_NEWYEAR: {user: "haruka_newyear", name: "CH0087", cn: "伊草春香（正月）"},
+    HARUKA_DRESS: {user: "haruka_dress", name: "CH0247", cn: "伊草春香（礼服）"}, // IMPL Implemented on 2026/05/27
     // School Lunch Club 供给部
     // AFFILIATION G_LUNCH
     FUUKA: {user: "fuuka", name: "Fuuka", cn: "爱清枫香"},
@@ -244,6 +246,7 @@ const CharacterTag = {
     YUKARI: {user: "yukari", name: "CH0161", cn: "勘解由小路紫"},
     YUKARI_SWIMSUIT: {user: "yukari_swimsuit", name: "CH0301", cn: "勘解由小路紫（泳装）"}, // IMPL Implemented on 2025/06/25
     NAGUSA: {user: "nagusa", name: "CH0222", cn: "御稜名草"}, // IMPL Implemented on 2025/05/21
+    NAGUSA_SWIMSUIT: {user: "nagusa_swimsuit", name: "CH0303", cn: "御稜名草（泳装）"}, // IMPL Implemented on 2026/06/10
     // Festival Management Committee 节庆营运管理部
     // AFFILIATION H_FESTIVAL
     SHIZUKO: {user: "shizuko", name: "Shizuko", cn: "河和静子"},
