@@ -278,6 +278,7 @@ const CharacterTag = {
     // Xuanlong Office 玄龙门
     // AFFILIATION S_XUANLONG
     KISAKI: {user: "kisaki", name: "CH0139", cn: "龙华妃咲"}, // IMPL implemented on 2024/09/25
+    KISAKI_SWIMSUIT: {user: "kisaki_swimsuit", name: "CH0356", cn: "龙华妃咲（泳装）"}, // IMPL Implemented on 2026/06/24
     MINA: {user: "mina", name: "CH0138", cn: "近卫南"},
     // Xuanwu Merchant Association 玄武商会
     // AFFILIATION S_XUANWU
@@ -291,6 +292,7 @@ const CharacterTag = {
     // AFFILIATION S_PLUM
     SHUN: {user: "shun", name: "Shun", cn: "春原瞬"},
     SHUN_YOUNG: {user: "shun_young", name: "CH0066", cn: "春原瞬（幼女）"},
+    SHUNLING_SWIMSUIT: {user: "shunling_swimsuit", name: "CH0355", cn: "春原瞬（泳装）（双形态）"}, // IMPL Implemented on 2026/06/24
     KOKONA: {user: "kokona", name: "CH0137", cn: "春原心奈"},
     // ------------------- Red Winter ----------------------- 红冬
     // Red Winter Office 红冬事务局
