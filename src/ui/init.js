@@ -70,10 +70,15 @@ const CharacterTag = {
     // Pandemonium Society 万魔殿
     // AFFILIATION G_PANDEMONIUM
     MAKOTO: {user: "makoto", name: "CH0079", cn: "羽沼真琴"},
+    MAKOTO_SWIMSUIT: {user: "makoto_swimsuit", name: "CH0344", cn: "羽沼真琴（泳装）"}, // IMPL Implemented on 2026/07/29
     IROHA: {user: "iroha", name: "CH0156", cn: "枣伊吕波"},
+    IROHA_SWIMSUIT: {user: "iroha_swimsuit", name: "CH0346", cn: "枣伊吕波（泳装）"}, // IMPL Implemented on 2026/08/05
     IBUKI: {user: "ibuki", name: "Ibuki", cn: "丹花伊吹"},
+    IBUKI_SWIMSUIT: {user: "ibuki_swimsuit", name: "CH0347", cn: "丹花伊吹（泳装）"}, // IMPL Implemented on 2026/08/05
     CHIAKI: {user: "chiaki", name: "CH0238", cn: "元宫千明"}, // IMPL Implemented on 2024/11/20
+    CHIAKI_SWIMSUIT: {user: "chiaki_swimsuit", name: "CH0348", cn: "元宫千明（泳装）"}, // IMPL Implemented on 2026/07/29
     SATSUKI: {user: "satsuki", name: "CH0080", cn: "京极皋月"}, // IMPL Implemented on 2024/11/20
+    SATSUKI_SWIMSUIT: {user: "satsuki_swimsuit", name: "CH0345", cn: "京极皋月（泳装）"}, // IMPL Implemented on 2026/07/29
     // Hot Spring Development Department 温泉开发部
     // AFFILIATION G_HOTSPRING
     KASUMI: {user: "kasumi", name: "CH0089", cn: "鬼怒川霞"},
