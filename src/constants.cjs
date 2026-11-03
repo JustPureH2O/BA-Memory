@@ -95,6 +95,7 @@ const CharacterTag = {
     // Hot Spring Development Department 温泉开发部
     // AFFILIATION G_HOTSPRING
     KASUMI: {user: "kasumi", name: "CH0089"},
+    KASUMI_SWIMSUIT: {user: "kasumi_swimsuit", name: "CH0328", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/09/09
     MEGU: {user: "megu", name: "CH0088"},
     // Emergency Medicine Club 救急医学部
     // AFFILIATION G_MEDICINE
@@ -169,11 +170,14 @@ const CharacterTag = {
     KOHARU_SWIMSUIT: {user: "koharu_swimsuit", name: "CH0205"},
     AZUSA: {user: "azusa", name: "Azusa"},
     AZUSA_SWIMSUIT: {user: "azusa_swimsuit", name: "Azusa_swimsuit"},
+    AZUSA_RACECAR: {user: "azusa_racecar", name: "CH0380", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/10/28
     // 官方图册为 Ajitani Hifumi 而非此处的 Hihumi，为消除歧义决定添加两个不同译名
     HIFUMI: {user: "hifumi", name: "Hihumi"},
     HIHUMI: {user: "hihumi", name: "Hihumi"},
     HIFUMI_SWIMSUIT: {user: "hifumi_swimsuit", name: "CH0058"},
     HIHUMI_SWIMSUIT: {user: "hihumi_swimsuit", name: "CH0058"},
+    HIFUMI_RACECAR: {user: "hifumi_racecar", name: "CH0379", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/10/28
+    HIHUMI_RACECAR: {user: "hihumi_racecar", name: "CH0379", loader: LoaderType.SPINEV4},
     HANAKO: {user: "hanako", name: "Hanako"},
     HANAKO_SWIMSUIT: {user: "hanako_swimsuit", name: "CH0209"},
     // Helmet Gang 头盔团
@@ -348,6 +352,11 @@ const CharacterTag = {
     // AFFILIATION R_PUBLISHING
     YAKUMO: {user: "yakumo", name: "CH0228", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/11/19
     TAKANE: {user: "takane", name: "CH0229", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2025/11/19
+    // No.183 Special Class 183特别班
+    // AFFILIATION R_SPECIALCLASS183
+    ANNA: {user: "anna", name: "CH0320", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/09/23
+    ERINA: {user: "erina", name: "CH0321", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/09/23
+    RANA: {user: "rana", name: "CH0322", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/10/28
     // --------------------- Valkyrie --------------------- 瓦尔基里
     // Public Security Bureau 公安局
     // AFFILIATION V_PUBLICSECURITY
@@ -410,6 +419,13 @@ const CharacterTag = {
     // Room 404, Dormitory N4 第四宿舍404室
     // AFFILIATION W_DORM404
     RENA: {user: "rena", name: "CH0305", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/03/18
+    TSUMUGI: {user: "tsumugi", name: "CH0252", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/10/07
+    // --------------- Odyssey Marine Academy --------------- 奥德赛海洋学院
+    // AFFILIATION ODYSSEY
+    // Diving Department 潜水部
+    // AFFILIATION O_DIVING
+    KOTONE: {user: "kotone", name: "CH0369", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/08/26
+    KOKORO: {user: "kokoro", name: "CH0368", loader: LoaderType.SPINEV4}, // IMPL Implemented on 2026/08/26
     // ------------ Somewhere Outside Kivotos ------------ 联动角色
     // VOCALOID V家
     // AFFILIATION VOCALOID

@@ -1,3 +1,5 @@
+import {LoaderType} from "../constants";
+
 const CharacterTag = {
     // -------------- Abydos ---------------- 阿拜多斯
     // Countermeasures Committee 对策委员会
@@ -82,6 +84,7 @@ const CharacterTag = {
     // Hot Spring Development Department 温泉开发部
     // AFFILIATION G_HOTSPRING
     KASUMI: {user: "kasumi", name: "CH0089", cn: "鬼怒川霞"},
+    KASUMI_SWIMSUIT: {user: "kasumi_swimsuit", name: "CH0328", cn: "鬼怒川霞（泳装）"}, // IMPL Implemented on 2026/09/09
     MEGU: {user: "megu", name: "CH0088", cn: "下仓惠"},
     // Emergency Medicine Club 救急医学部
     // AFFILIATION G_MEDICINE
@@ -156,8 +159,10 @@ const CharacterTag = {
     KOHARU_SWIMSUIT: {user: "koharu_swimsuit", name: "CH0205", cn: "下江小春（泳装）"},
     AZUSA: {user: "azusa", name: "Azusa", cn: "白洲梓"},
     AZUSA_SWIMSUIT: {user: "azusa_swimsuit", name: "Azusa_swimsuit", cn: "白洲梓（泳装）"},
+    AZUSA_RACECAR: {user: "azusa_racecar", name: "CH0380", cn: "白洲梓（赛车）"}, // IMPL Implemented on 2026/10/28
     HIFUMI: {user: "hifumi", name: "Hihumi", cn: "阿慈谷日富美"},
     HIFUMI_SWIMSUIT: {user: "hifumi_swimsuit", name: "CH0058", cn: "阿慈谷日富美（泳装）"},
+    HIFUMI_RACECAR: {user: "hifumi_racecar", name: "CH0379", cn: "阿慈谷日富美（赛车）"}, // IMPL Implemented on 2026/10/28
     HANAKO: {user: "hanako", name: "Hanako", cn: "浦和花子"},
     HANAKO_SWIMSUIT: {user: "hanako_swimsuit", name: "CH0209", cn: "浦和花子（泳装）"},
     // Helmet Gang 头盔团
@@ -327,6 +332,11 @@ const CharacterTag = {
     // AFFILIATION R_PUBLISHING
     YAKUMO: {user: "yakumo", name: "CH0228", cn: "荒槙八云"}, // IMPL Implemented on 2025/11/19
     TAKANE: {user: "takane", name: "CH0229", cn: "三善贵音"}, // IMPL Implemented on 2025/11/19
+    // No.183 Special Class 183特别班
+    // AFFILIATION R_SPECIALCLASS183
+    ANNA: {user: "anna", name: "CH0320", cn: "仁木安娜"}, // IMPL Implemented on 2026/09/23
+    ERINA: {user: "erina", name: "CH0321", cn: "二木叶莲娜"}, // IMPL Implemented on 2026/09/23
+    RANA: {user: "rana", name: "CH0322", cn: "古畑兰娜"}, // IMPL Implemented on 2026/10/28
     // --------------------- Valkyrie --------------------- 瓦尔基里
     // Public Security Bureau 公安局
     // AFFILIATION V_PUBLICSECURITY
@@ -388,6 +398,13 @@ const CharacterTag = {
     // Room 404, Dormitory N4 第四宿舍404室
     // AFFILIATION W_DORM404
     RENA: {user: "rena", name: "CH0305", cn: "衣裴莱娜"}, // IMPL Implemented on 2026/03/18
+    TSUMUGI: {user: "tsumugi", name: "CH0252", cn: "椎名纺"}, // IMPL Implemented on 2026/10/07
+    // --------------- Odyssey Marine Academy --------------- 奥德赛海洋学院
+    // AFFILIATION ODYSSEY
+    // Diving Department 潜水部
+    // AFFILIATION O_DIVING
+    KOTONE: {user: "kotone", name: "CH0369", cn: "渊上琴音"}, // IMPL Implemented on 2026/08/26
+    KOKORO: {user: "kokoro", name: "CH0368", cn: "渡海心"}, // IMPL Implemented on 2026/08/26
     // ------------ Somewhere Outside Kivotos ------------ 联动角色
     // VOCALOID V家
     // AFFILIATION VOCALOID
